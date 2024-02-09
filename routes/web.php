@@ -5,7 +5,10 @@ use App\Http\Controllers\DepartmentController;
 use App\Http\Controllers\RoomController;
 use App\Http\Controllers\RoomTypeController;
 use App\Http\Controllers\StaffController;
+use App\Http\Controllers\UsersController;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
+
 
 
 
@@ -21,7 +24,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('');
+    return view('home');
 });
 //Admin SideBar Routes//
 Route::resource('admin-dashboard',AdminController::class);
@@ -31,7 +34,7 @@ Route::resource('roomtypes',RoomTypeController::class);
 //Deleting RoomTypes Route//
 Route::get('roomtypes/{id}/delete',[RoomTypeController::class,'destroy']);
 //Deleting RoomTypes Images
-Route::get('roomtypes/id}/delete/',[RoomTypeController::class,'destroy_roomtype_img']);
+Route::get('roomtypes/{id}/delete/',[RoomTypeController::class,'destroy_roomtype_img']);
 
 
 //Room Routes//
@@ -51,4 +54,9 @@ Route::get('staffs/{id}/delete',[StaffController::class,'destroy']);
 
 
 
+// Auth::routes();
+
+// Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+// Route::get('/users', [UsersController::class, 'index'])->name('users.index');
 
