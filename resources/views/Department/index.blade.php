@@ -1,50 +1,81 @@
 @extends('layouts.app')
 @section('content')
-    <div class="card shadow mb-4">
-        <div class="card-header py-3">
-            <h5 class="m-2 font-weight-bold  text-primary">Departments</h5>
-            <a href="{{url('departments/create')}}" type="submit" class="float-right btn btn-success btn-sm">New</a>
-        </div>
-        @include('alerts.errors')
-        @include('alerts.success')
-        @include('alerts.warning')
-        <div class="card-body">
-            <div class="table">
-                <table class="table table-bordered" id="dataTable">
-                    <thead>
-                    <tr>
-                        <th>#</th>
-                        <th>Name</th>
-                        <th>Action</th>
 
-                    </tr>
-                    </thead>
-                    <tfoot>
-                    <tr>
-                        <th>#</th>
-                        <th>Name</th>
-                        <th>Action</th>
-
-                    </tr>
-                    </tfoot>
-                    <tbody>
-                    @foreach($depart as $departs)
-                        <tr>
-                                <td>{{$departs->id}}</td>
-                                <td>{{$departs->title}}</td>
-                            <td>
-                                <a href="{{url('departments/'.$departs->id)}}" class="btn btn-info btn-sm"><i class="typcn typcn-eye"></i></a>
-                                <a href="{{url('departments/'.$departs->id).'/edit'}}" class="btn btn-warning btn-sm "><i class="typcn typcn-edit"></i></a>
-                                <a onclick="return confirm('Are You Sure??')"
-                                   href="{{url('departments/'.$departs->id).'/delete'}}"
-                                   class="btn btn-danger btn-sm">
-                                    <i class="typcn typcn-trash"></i></a>
-                            </td>
-                        </tr>
-                    @endforeach
-                </table>
+    <div class="content-body">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4 class="card-title">Departments</h4>
+                            @include('alerts.error')
+                            @include('alerts.success')
+                            @include('alerts.warning')
+                           <a href="{{url('departments/create')}}" type="submit" class="float-right btn btn-dark btn-sm">New</a>
+                        </div>
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table id="example3" class="display" style="min-width: 845px">
+                                    <thead>
+                                        <tr>
+                                            <th>S/n</th>
+                                            <th>Name</th>
+                                            <th>Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                      @foreach($depart as $departs)
+                                        <tr>
+                                            <td>{{$departs->id}}</td>
+                                            <td>{{$departs->title}}</td>
+                                            <td>
+                                                <div class="d-flex">
+                                                    <a href="{{url('departments/'.$departs->id)}}" class="btn btn-primary shadow btn-xs sharp me-1"><i class="fa fa-eye"></i></a>
+                                                    <a href="{{url('departments/'.$departs->id).'/edit'}}" class="btn btn-warning shadow btn-xs sharp me-1"><i class="fa fa-pencil"></i></a>
+                                                    <button class="btn btn-danger shadow btn-xs sharp delete-btn" data-url="{{url('departments/'.$departs->id).'/delete'}}"><i class="fa fa-trash"></i></button>
+                                                    {{-- <a href="{{url('departments/'.$departs->id).'/delete'}}" class="btn btn-danger  shadow btn-xs sharp"
+                                                      ><i class="fa fa-trash"></i></a> --}}
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                     @endforeach
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 
+    <script type="text/javascript">
+        // Listen for click event on delete button
+        document.addEventListener('DOMContentLoaded', function() {
+            document.querySelectorAll('.delete-btn').forEach(button => {
+                button.addEventListener('click', function(event) {
+                    event.preventDefault(); // Prevent default link behavior
+
+                    // Extract delete action URL from data-url attribute
+                    let url = this.getAttribute('data-url');
+
+                    // Display SweetAlert confirmation dialog
+                    Swal.fire({
+                        title: 'Are you sure to delete?',
+                        text: 'You wont be able to recover this data',
+                        icon: 'warning',
+                        showCancelButton: true,
+                        confirmButtonColor: '#d33',
+                        cancelButtonColor: '#3085d6',
+                        confirmButtonText: 'Ok'
+                    }).then((result) => {
+                        if (result.isConfirmed) {
+                            // Redirect to delete action URL
+                            window.location.href = url;
+                        }
+                    });
+                });
+            });
+        });
+    </script>
 @endsection

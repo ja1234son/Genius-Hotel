@@ -1,8 +1,6 @@
-<footer class="footer">
-    <div class="d-sm-flex justify-content-center justify-content-sm-between">
-              <span class="text-center text-sm-left d-block d-sm-inline-block">Copyright © <a href="https://www.bootstrapdash.com/" target="_blank">techgenius.com</a> 2024<br><br>
-                Distributed By: <a href="https://www.themewagon.com/" target="_blank">TechGenius</a>
-              </span>
-{{--        <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">Free <a href="https://www.bootstrapdash.com/" target="_blank">Bootstrap dashboard </a>templates from Bootstrapdash.com</span>--}}
+<div class="footer">
+
+    <div class="copyright">
+        <p>Copyright © Designed &amp; Developed by <a href="https://www.templatemonster.com/authors/nettathemes/" >TechGenius</a> 2024</p>
     </div>
-</footer>
+</div>

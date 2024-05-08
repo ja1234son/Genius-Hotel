@@ -33,32 +33,49 @@ class StaffController extends Controller
      */
     public function store(Request $request)
     {
-        $request->validate([
+        $request->validate(
+            [
             "full_name" => "required",
+            "email" => "required|email|unique:staff",
             "department_id" => "required",
-            "photo" => "required",
+            "photo" => "nullable|image|mimes:jpeg,png,jpg,gif|max:2048",
             "salary_type" => "required",
             "salary_amount" => "required"
-        ]);
+            ],
+            [
+                'full_name.required' => 'The Full Name field is required',
+                'email.required' => 'The Email field is required',
+                'email.email' => 'The Email must be valid email',
+                'email.unique' => 'The Email has already  been  taken',
+                'department_id.required' => 'The Department field is required',
+                'photo.mimes' => 'The  Staff photo must be of type jpeg, png, jpg, or gif',
+                'photo.image' => 'The Staff photo  must be an image file',
+                 'salary_type.required' =>'The Salary Type field is required',
+                 'salary_amount.required' => 'The Salary Amount field is required',
+            ]
+    );
 
-        $data = new Staff();
-        $data->full_name = $request->full_name;
-        $data->department_id = $request->department_id;
-        if ($request->hasFile('photo')) {
-            $file = $request->file('photo');
-            $extention = $file->getClientOriginalExtension();
-            $filename = time() . '.' . $extention;
-            $file->move('assets/StaffImages', $filename);
-            $data->photo = $filename;
-        }
-        $data->salary_type = $request->salary_type;
-        $data->salary_amount = $request->salary_amount;
-        $res = $data->save();
-        if ($res) {
+       $staff = new Staff();
+       $staff->full_name = $request->full_name;
+       $staff->email = $request->email;
+       if ($request->hasFile('photo')) {
+        $file = $request->file('photo');
+        $filename = $file->getClientOriginalName();
+        $file->move('assets/StaffImages', $filename);
+        $staff->photo = $filename;
+       }
+       $staff->department_id = $request->department_id;
+       $staff->salary_type = $request->salary_type;
+       $staff->salary_amount = $request->salary_amount;
+       $res = $staff->save();
+         if ($res) {
+            if (isset($_POST["save_close"])) {
+               return redirect(url('staffs'))->with('success', 'Staff registered successfully');
+             }
             return redirect()->back()->with('success', 'Staff registered successfully');
-        } else {
-            return redirect()->back()->with('success', 'Staff registration failed');
-        }
+           }else {
+            return redirect()->back()->with('success', 'Staff registered successfully');
+         }
     }
 
     /**
@@ -85,36 +102,50 @@ class StaffController extends Controller
      */
     public function update(Request $request, string $id)
     {
-        $request->validate([
-            "full_name" => "required",
-            "department_id" => "required",
-//            "photo" => "required",
-            "salary_type" => "required",
-            "salary_amount" => "required",
-        ]);
-
+        $request->validate(
+            [
+                "full_name" => "required",
+                "email" => "required|email|",
+                "department_id" => "required",
+                "photo" => "nullable|image|mimes:jpeg,png,jpg,gif|max:2048",
+                "salary_type" => "required",
+                "salary_amount" => "required"
+                ],
+                [
+                    'full_name.required' => 'The Full Name field is required',
+                    'email.required' => 'The Email field is required',
+                    'email.email' => 'The Email must be valid email',
+                    'department_id.required' => 'The Department field is required',
+                    'photo.mimes' => 'The  Staff photo must be of type jpeg, png, jpg, or gif',
+                    'photo.image' => 'The Staff photo  must be an image file',
+                     'salary_type.required' =>'The Salary Type field is required',
+                     'salary_amount.required' => 'The Salary Amount field is required',
+                ]
+    );
         $data = Staff::find($id);
-        if ($request->hasFile('photo')){
-//Upload new image
-           $file = $request->file('photo');
-           $extension = $file->getClientOriginalExtension();
-           $filename = time().'.'.$extension;
-           $imgpath = $file->move(public_path('assets/StaffImages'),$filename);
-           $data->photo = $filename;
-        }else{
-//Save the  old image if it exists
-            $file = $request->old_photo;
-        }
         $data->full_name = $request->full_name;
+       $data->email = $request->email;
+       if ($request->hasFile('photo')) {
+          $file = $request->file('photo');
+          $filename = $file->getClientOriginalName();
+          $file->move('assets/StaffImages',$filename);
+          $data->photo = $filename;
+       }else {
+           $data->photo = $request->old_photo;
+       }
         $data->department_id = $request->department_id;
         $data->salary_type = $request->salary_type;
         $data->salary_amount = $request->salary_amount;
         $res = $data->save();
-        if ($res){
-            return redirect()->back()->with('success', 'Staff updated  successfully');
-        }else{
-            return redirect()->back()->with('success', 'Staff updating failed');
-        }
+
+        if ($res) {
+            if (isset($_POST["save_close"])) {
+               return redirect(url('staffs'))->with('success', 'Staff updated successfully');
+             }
+            return redirect()->back()->with('success', 'Staff updated successfully');
+           }else {
+            return redirect()->back()->with('error', 'Staff updating failed');
+         }
     }
 
     /**
@@ -123,13 +154,18 @@ class StaffController extends Controller
     public function destroy(string $id)
     {
 
-    }
-
-    private function deleteImage($old_image)
-    {
-        $imagePath = public_path('StaffImages/' . $old_image);
-        if (file_exists($imagePath)) {
-            unlink($imagePath);
+        $staff = Staff::find($id);
+        if ($staff->photo) {
+            $imgpath = public_path('StaffImages').'/'.$staff->photo;
+            if (file_exists($imgpath)) {
+               unlink($imgpath);
+            }
+        }
+        $res = $staff->delete();
+         if ($res) {
+         return back()->with('success', 'Staff deleted successfully');
+         }else {
+            return back()->with('error', 'Staff deleting failed');
         }
     }
 }

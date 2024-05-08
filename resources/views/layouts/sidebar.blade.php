@@ -1,65 +1,59 @@
-<nav class="sidebar sidebar-offcanvas" id="sidebar">
-    <ul class="nav">
-        <li class="nav-item">
-            <div class="d-flex sidebar-profile">
-                <div class="sidebar-profile-image">
-                    <img src="{{url('assets/images/faces/face29.png')}}" alt="image">
-                    <span class="sidebar-status-indicator"></span>
-                </div>
-                <div class="sidebar-profile-name">
-                    <p class="sidebar-name">
-                        Kenneth Osborne
-                    </p>
-                    <p class="sidebar-designation">
-                        Welcome
-                    </p>
-                </div>
-            </div>
-            <div class="nav-search">
-                <div class="input-group">
-                    <input type="text" class="form-control" placeholder="Type to search..." aria-label="search" aria-describedby="search">
-                    <div class="input-group-append">
-                  <span class="input-group-text" id="search">
-                    <i class="typcn typcn-zoom"></i>
-                  </span>
-                    </div>
-                </div>
-            </div>
-            <p class="sidebar-menu-title">Dash menu</p>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="{{url('admin-dashboard')}}">
-                <i class="typcn typcn-device-desktop menu-icon"></i>
-                <span class="menu-title">Dashboard</span>
-            </a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
-                <i class="typcn typcn-home-outline menu-icon"></i>
-                <span class="menu-title">Rooms</span>
-                <i class="typcn typcn-chevron-right menu-arrow"></i>
-            </a>
-            <div class="collapse" id="ui-basic">
-                <ul class="nav flex-column sub-menu">
-                    <li class="nav-item"> <a class="nav-link" href="{{url('roomtypes')}}">RoomTypes</a></li>
-                    <li class="nav-item"> <a class="nav-link" href="{{url('rooms')}}">Rooms</a></li>
+<div class="deznav">
+    <div class="deznav-scroll">
+
+        <ul class="metismenu" id="menu">
+            <li><a class="" href="{{url('admin-dashboard')}}" aria-expanded="false">
+                    <i class="fa fa-dashboard"></i>
+                    <span class="nav-text">Dashboard</span>
+                </a>
+            </li>
+
+            <li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
+                <i class="fa fa-home"></i>
+                    <span class="nav-text">Rooms</span>
+                </a>
+                <ul aria-expanded="false">
+                        <ul aria-expanded="false">
+                            <li><a href="{{url('roomtypes')}}">RoomTypes</a></li>
+                            <li><a href="{{url('rooms')}}">Rooms</a></li>
+                        </ul>
+                    </li>
                 </ul>
+            </li>
+            <li><a href="{{url('departments')}}" class="ai-icon" aria-expanded="false">
+                <i class="fa fa-book"></i>
+                <span class="nav-text">Department</span>
+            </a>
+        </li>
+        <li><a href="{{url('staffs')}}" class="ai-icon" aria-expanded="false">
+            <i class="fa fa-users"></i>
+            <span class="nav-text">Staff</span>
+        </a>
+    </li>
+        </ul>
+
+        <div class="dropdown header-profile">
+            <a class="nav-link" href="javascript:void(0);" role="button" data-bs-toggle="dropdown">
+                <img src="{{url('assets/images/profile/pic1.jpg')}}" width="20" alt=""/>
+                <div class="header-info">
+                    <span class="font-w400 mb-0">Hello,<b>Haaland</b></span>
+                    <small class="text-end font-w400">haaland@domain.com</small>
+                </div>
+            </a>
+            <div class="dropdown-menu dropdown-menu-end">
+                <a href="app-profile.html" class="dropdown-item ai-icon">
+                    <svg id="icon-user1" xmlns="http://www.w3.org/2000/svg" class="text-primary" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                    <span class="ms-2">Profile </span>
+                </a>
+                <a href="email-inbox.html" class="dropdown-item ai-icon">
+                    <svg id="icon-inbox" xmlns="http://www.w3.org/2000/svg" class="text-success" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                    <span class="ms-2">Inbox </span>
+                </a>
+                <a href="login.html" class="dropdown-item ai-icon">
+                    <svg id="icon-logout" xmlns="http://www.w3.org/2000/svg" class="text-danger" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path><polyline points="16 17 21 12 16 7"></polyline><line x1="21" y1="12" x2="9" y2="12"></line></svg>
+                    <span class="ms-2">Logout </span>
+                </a>
             </div>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="{{url('departments')}}">
-                <i class="typcn typcn-book menu-icon"></i>
-                <span class="menu-title">Department</span>
-            </a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="{{url('staffs')}}">
-                <i class="typcn typcn-user-add-outline menu-icon"></i>
-                <span class="menu-title">Staff</span>
-            </a>
-        </li>
-
-    </ul>
-
-
-</nav>
+        </div>
+    </div>
+</div>

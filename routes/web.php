@@ -24,8 +24,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home');
+    return view('landing.home');
 });
+
 //Admin SideBar Routes//
 Route::resource('admin-dashboard',AdminController::class);
 
@@ -34,7 +35,7 @@ Route::resource('roomtypes',RoomTypeController::class);
 //Deleting RoomTypes Route//
 Route::get('roomtypes/{id}/delete',[RoomTypeController::class,'destroy']);
 //Deleting RoomTypes Images
-Route::get('roomtypes/{id}/delete/',[RoomTypeController::class,'destroy_roomtype_img']);
+// Route::get('roomtypes/{id}/delete/',[RoomTypeController::class,'destroy_roomtype_img']);
 
 
 //Room Routes//

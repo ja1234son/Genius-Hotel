@@ -1,90 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>HOTELIER</title>
-    <!-- base:css -->
-    <link rel="stylesheet" href="{{url('assets/vendors/typicons.font/font/typicons.css')}}">
-    <link rel="stylesheet" href="{{url('assets/vendors/css/vendor.bundle.base.css')}}">
 
-    <!-- endinject -->
-    <!-- plugin css for this page -->
-    <!-- End plugin css for this page -->
-    <!-- inject:css -->
-    <link rel="stylesheet" href="{{url('assets/css/vertical-layout-light/style.css')}}">
-    <!-- endinject -->
-    <link rel="shortcut icon" href="{{url('assets/images/logo.png')}}" />
+    <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="keywords" content="" />
+	<meta name="author" content="" />
+	<meta name="robots" content="" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="NettaAdChip : Crypto Bootstrap Admin Template" />
+	<meta property="og:title" content="NettaAdChip : Crypto Bootstrap Admin Template" />
+	<meta property="og:description" content="NettaAdChip : Crypto Bootstrap Admin Template" />
+
+	<meta name="format-detection" content="telephone=no">
+
+	<!-- PAGE TITLE HERE -->
+	<title>HOTELIER</title>
+
+	<!-- FAVICONS ICON -->
+	<link rel="shortcut icon" type="image/png" href="{{url('assets/images/logo.png')}}" />
+
+	<link href="{{url('assets/vendor/owl-carousel/owl.carousel.css')}}" rel="stylesheet">
+	<link href="{{url('assets/vendor/jquery-nice-select/css/nice-select.css')}}" rel="stylesheet">
+
+    <!-- Datatable -->
+    <link href="{{url('assets/vendor/datatables/css/jquery.dataTables.min.css')}}" rel="stylesheet">
+
+    <!-- Sweetalert -->
+    <link href="{{url('assets/vendor/sweetalert2/dist/sweetalert2.min.css')}}" rel="stylesheet">
+
+     <!-- Toastr -->
+     <link rel="stylesheet" href="{{url('assets/vendor/toastr/css/toastr.min.css')}}">
+
+	<!-- Style css -->
+    <link href="{{url('assets/css/style.css')}}" rel="stylesheet">
 
 </head>
 <body>
-<div class="row" id="proBanner">
-    <i class="typcn typcn-delete-outline" id="bannerClose"></i>
-</div>
-<div class="container-scroller">
-    <!-- partial:partials/_navbar.html -->
-    @include('layouts.navbar')
-    <!-- partial -->
-    <div class="container-fluid page-body-wrapper">
-        <!-- partial:partials/_settings-panel.html -->
-       @include('layouts.settings')
-        <!-- partial -->
-        <!-- partial:partials/_sidebar.html -->
-       @include('layouts.sidebar')
-        <!-- partial -->
-        <div class="main-panel">
-         @yield('content')
-            <!-- content-wrapper ends -->
-            <!-- partial:partials/_footer.html -->
-           @include('layouts.footer')
-            <!-- partial -->
-        </div>
-        <!-- main-panel ends -->
+
+
+        <!--*******************
+        Preloader start
+    ********************-->
+    <div id="preloader">
+        <div class="loader">
+			<span>H</span>
+			<span>O</span>
+			<span>T</span>
+			<span>E</span>
+			<span>L</span>
+		</div>
     </div>
-    <!-- page-body-wrapper ends -->
-</div>
-<!-- container-scroller -->
-<!-- base:js -->
-<script src="{{url('assets/vendors/js/vendor.bundle.base.js')}}"></script>
-<!-- endinject -->
-<!-- Plugin js for this page-->
-<!-- End plugin js for this page-->
-<!-- inject:js -->
-<script src="{{url('assets/js/off-canvas.js')}}"></script>
-<script src="{{url('assets/js/hoverable-collapse.js')}}"></script>
-<script src="{{url('assets/js/template.js')}}"></script>
-<script src="{{url('assets/js/settings.js')}}"></script>
-<script src="{{url('assets/js/todolist.js')}}"></script>
-<!-- endinject -->
-<!-- plugin js for this page -->
-<script src="{{url('assets/vendors/progressbar.js/progressbar.min.js')}}"></script>
-<script src="{{url('assets/vendors/chart.js/Chart.min.js')}}"></script>
-<!-- End plugin js for this page -->
-<!-- Custom js for this page-->
-<script src="{{url('assets/js/dashboard.js')}}"></script>
+    <!--*******************
+        Preloader end
+    ********************-->
+
+    <!--**********************************
+        Main wrapper start
+    ***********************************-->
+    <div id="main-wrapper">
+
+        <!--**********************************
+            Nav header start
+        ***********************************-->
+        <div class="nav-header">
+            <a href="index.html" class="brand-logo">
+					<img src="{{url('assets/images/logo.png')}}" alt="logo" style="width:70%">
+
+            </a>
+            <div class="nav-control">
+                <div class="hamburger">
+                    <span class="line"></span><span class="line"></span><span class="line"></span>
+                </div>
+            </div>
+        </div>
+        <!--**********************************
+            Nav header end
+        ***********************************-->
+
+		<!--**********************************
+            Chat box start
+        ***********************************-->
+@include('layouts.widgets')
+		<!--**********************************
+            Chat box End
+        ***********************************-->
+
+		<!--**********************************
+            Header start
+        ***********************************-->
+@include('layouts.navbar')
+        <!--**********************************
+            Header end ti-comment-alt
+        ***********************************-->
+
+        <!--**********************************
+            Sidebar start
+        ***********************************-->
+@include('layouts.sidebar')
+        <!--**********************************
+            Sidebar end
+        ***********************************-->
+
+		<!--**********************************
+            Content body start
+        ***********************************-->
+@yield('content')
+        <!--**********************************
+            Content body end
+        ***********************************-->
+
+
+
+        <!--**********************************
+            Footer start
+        ***********************************-->
+@include('layouts.footer')
+        <!--**********************************
+            Footer end
+        ***********************************-->
+
+		<!--**********************************
+           Support ticket button start
+        ***********************************-->
+
+        <!--**********************************
+           Support ticket button end
+        ***********************************-->
+
+
+	</div>
+
+
+<script src="{{url('assets/vendor/global/global.min.js')}}"></script>
+<script src="{{url('assets/vendor/chart.js/Chart.bundle.min.js')}}"></script>
+<script src="{{url('assets/vendor/jquery-nice-select/js/jquery.nice-select.min.js')}}"></script>
+
+<!-- Apex Chart -->
+<script src="{{url('assets/vendor/apexchart/apexchart.js')}}"></script>
+<script src="{{url('assets/vendor/owl-carousel/owl.carousel.js')}}"></script>
+
+<!-- Dashboard 1 -->
+<script src="{{url('assets/js/dashboard/dashboard-1.js')}}"></script>
+
+    <!-- Datatable -->
+    <script src="{{url('assets/vendor/datatables/js/jquery.dataTables.min.js')}}"></script>
+    <script src="{{url('assets/js/plugins-init/datatables.init.js')}}"></script>
+
+    <!-- Sweetalert -->
+    <script src="{{url('assets/vendor/sweetalert2/dist/sweetalert2.min.js')}}"></script>
+    <script src="{{url('assets/js/plugins-init/sweetalert.init.js')}}"></script>
+
+     <!-- Toastr -->
+     <script src="{{url('assets/vendor/toastr/js/toastr.min.js')}}"></script>
+
+     <!-- All init script -->
+     <script src="{{url('assets/js/plugins-init/toastr-init.js')}}"></script>
+
+
+<script src="{{url('assets/js/custom.min.js')}}"></script>
+<script src="{{url('assets/js/deznav-init.js')}}"></script>
+<script src="{{url('assets/js/demo.js')}}"></script>
+<script src="{{url('assets/js/styleSwitcher.js')}}"></script>
 <!-- End custom js for this page-->
-
-<!-- DataTable js links -->
-<!-- Bootstrap core JavaScript-->
-<script src="vendor/jquery/jquery.min.js"></script>
-<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-
-<!-- Core plugin JavaScript-->
-<script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
-<!-- Custom scripts for all pages-->
-{{--<script src="js/sb-admin-2.min.js"></script>--}}
-
-<!-- Page level plugins -->
-<script src="vendor/datatables/jquery.dataTables.min.js"></script>
-<script src="vendor/datatables/dataTables.bootstrap4.min.js"></script>
-
-<!-- Page level custom scripts -->
-<script src="js/demo/datatables-demo.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 </body>
 
 </html>

@@ -31,20 +31,30 @@ class RoomController extends Controller
      */
     public function store(Request $request)
     {
-        $request->validate([
+        $request->validate(
+            [
             "name" => "required",
             "room_type_id" => "required"
-        ]);
+            ],
+            [
+                'name.required' => 'The Room  Name field is required',
+                'room_type_id.required' => 'The Room Type  field is required',
+            ]
+    );
         $data = new Room();
         $data->name = $request->name;
         $data->room_type_id = $request->room_type_id;
         $res = $data->save();
         if ($res){
-            return redirect()->back()->with('success','Room registered successfully');
-        }else{
-            return redirect()->back()->with('error','Room registration failed');
+            if (isset($_POST["save_close"])) {
+                  return redirect(url('rooms'))->with('success','Room registered successfully');
+            }
+               return redirect()->back()->with('success','Room registered successfully');
+        }else {
+                return redirect()->back()->with('error','Room registration failed');
         }
     }
+
 
     /**
      * Display the specified resource.
@@ -60,7 +70,7 @@ class RoomController extends Controller
      */
     public function edit(string $id)
     {
-       $roomtype = RoomType::all();
+      $roomtype = RoomType::all();
       $data = Room::find($id);
       return view('Room.edit',compact('data','roomtype'));
     }
@@ -70,19 +80,29 @@ class RoomController extends Controller
      */
     public function update(Request $request, string $id)
     {
-      $request->validate([
+      $request->validate(
+        [
           'name' => 'required',
           'room_type_id' => 'required',
-      ]);
+        ],
+        [
+            'name.required' => 'The Room  Name field is required',
+            'room_type_id.required' => 'The Room Type  field is required',
+        ]
+    );
       $data = Room::find($id);
       $data->name = $request->name;
       $data->room_type_id = $request->room_type_id;
       $res = $data->save();
+
       if ($res){
-          return redirect()->back()->with('success','Room updated successfully');
-      }else{
-          return redirect()->back()->with('error','Room updating failed');
-      }
+        if (isset($_POST["save_close"])) {
+              return redirect(url('rooms'))->with('success','Room updated successfully');
+        }
+           return redirect()->back()->with('success','Room updated successfully');
+    }else {
+            return redirect()->back()->with('error','Room updating failed');
+    }
     }
 
     /**

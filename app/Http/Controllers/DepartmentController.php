@@ -29,16 +29,25 @@ class DepartmentController extends Controller
      */
     public function store(Request $request)
     {
-        $request->validate([
+        $request->validate(
+            [
             "title" => "required",
-        ]);
+            ],
+            [
+                'title.required' => 'The Department Name field is required',
+            ]
+    );
         $data = new Department();
         $data->title = $request->title;
         $res = $data->save();
+
         if ($res){
-            return redirect()->back()->with('success','Department registered successfully');
-        }else{
-            return redirect()->back()->with('error','Department registration failed');
+            if (isset($_POST["save_close"])) {
+                  return redirect(url('departments'))->with('success','Department registered successfully');
+            }
+               return redirect()->back()->with('success','Department registered successfully');
+        }else {
+                return redirect()->back()->with('error','Department registration failed');
         }
     }
 
@@ -65,17 +74,26 @@ class DepartmentController extends Controller
      */
     public function update(Request $request, string $id)
     {
-        $request->validate([
+        $request->validate(
+            [
             "title" => "required",
-        ]);
+            ],
+            [
+                'title.required' => 'The Department Name field is required',
+            ]
+    );
 
         $data = Department::find($id);
         $data->title = $request->title;
         $res = $data->save();
+
         if ($res){
-            return redirect()->back()->with('success','Department updated successfully');
-        }else{
-            return redirect()->back()->with('error','Department updated failed');
+            if (isset($_POST["save_close"])) {
+                  return redirect(url('departments'))->with('success','Department updated successfully');
+            }
+               return redirect()->back()->with('success','Department updated successfully');
+        }else {
+                return redirect()->back()->with('error','Department updating failed');
         }
     }
 

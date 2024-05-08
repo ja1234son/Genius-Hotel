@@ -10,7 +10,11 @@
         "laravel/framework": "^10.10",
         "laravel/sanctum": "^3.3",
         "laravel/tinker": "^2.8",
-        "yajra/laravel-datatables": "^10.0"
+        "realrashid/sweet-alert": "^7.1",
+        "stripe/stripe-php": "^13.12",
+        "yajra/laravel-datatables": "^10.0",
+        "yajra/laravel-datatables-oracle": "^10.11",
+        "yoeunes/toastr": "^2.3"
     },
     "require-dev": {
         "fakerphp/faker": "^1.9.1",
