@@ -113,4 +113,9 @@ class RoomController extends Controller
        $data = Room::where('id',$id)->delete();
         return redirect()->back()->with('success','Room deleted successfully');
     }
+
+    public function get_rooms(){
+        $allrooms = RoomType::all();
+        return view('landing.rooms',['allrooms' => $allrooms]);
+    }
 }

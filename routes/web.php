@@ -1,13 +1,16 @@
 <?php
 
-use App\Http\Controllers\AdminController;
-use App\Http\Controllers\DepartmentController;
-use App\Http\Controllers\RoomController;
-use App\Http\Controllers\RoomTypeController;
-use App\Http\Controllers\StaffController;
-use App\Http\Controllers\UsersController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\RoomController;
+use App\Http\Controllers\AdminController;
+use App\Http\Controllers\Auth\LoginController;
+use App\Http\Controllers\Auth\RegisterController;
+use App\Http\Controllers\StaffController;
+use App\Http\Controllers\UsersController;
+use App\Http\Controllers\RoomTypeController;
+use App\Http\Controllers\DepartmentController;
+use App\Http\Controllers\AuthManagerController;
 
 
 
@@ -23,9 +26,27 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+//User Routes //
+
 Route::get('/', function () {
     return view('landing.home');
 });
+
+Route::get('about-us', function () {
+    return view('landing.about-us');
+});
+
+Route::get('services', function () {
+    return view('landing.services');
+});
+
+Route::get('our-rooms',[RoomController::class, 'get_rooms']);
+
+Route::get('contact', function () {
+    return view('landing.contact');
+});
+
+//Admin Routes ////
 
 //Admin SideBar Routes//
 Route::resource('admin-dashboard',AdminController::class);
@@ -53,11 +74,17 @@ Route::resource('staffs',StaffController::class);
 //Deleting Staffs Route
 Route::get('staffs/{id}/delete',[StaffController::class,'destroy']);
 
+//Auth Login Routes
+Route::get('/login', [LoginController::class,'login_index'])->name('login');
+Route::post('/login', [LoginController::class,'store'])->name('login.post');
+Route::get('/register', [RegisterController::class,'register_index'])->name('register');
+Route::post('/register', [RegisterController::class,'store'])->name('register.post');
+
+// Auth logout Route
+Route::get('/logout', [LoginController::class,'logout'])->name('logout');
+
 
 
 // Auth::routes();
-
-// Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-
 // Route::get('/users', [UsersController::class, 'index'])->name('users.index');
 
