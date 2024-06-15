@@ -50,7 +50,10 @@
                         </div> --}}
                         <a href="{{ url('contact') }}" class="nav-item nav-link">Contact</a>
                     </div>
-                    <a href="{{ route('login') }}" class="btn btn-primary rounded-0 py-4 px-md-5 d-none d-lg-block">Login<i class="fa fa-arrow-right ms-3"></i></a>
+                    <a href="{{ route('login') }}" style="margin-left: 150px;" class="btn btn-primary rounded-0 py-4 px-md-5 d-none d-lg-block">
+                        Login<i class="fa fa-arrow-right ms-3"></i></a>
+                    <a href="{{ route('') }}" class="btn btn-primary rounded-0 py-4 px-md-5 d-none d-lg-block">
+                        Booking<i class="fa fa-arrow-right ms-3"></i></a>
                 </div>
             </nav>
         </div>
