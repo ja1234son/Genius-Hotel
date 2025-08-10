@@ -24,5 +24,16 @@ class HomeLandingController extends Controller
       return view('landing.home',compact('rooms','staffs','roomstotal','staffstotal','departtotal'));
     }
 
+     public function AboutIndex(){
+
+        $rooms =  RoomType::with('room')->get();
+        $staffs = Staff::all();
+
+        //Count numbers of Staffs, Rooms and  Department//
+        $roomstotal= Room::count();
+        $staffstotal = Staff::count();
+        $departtotal = Department::count();
+      return view('landing.about-us',compact('rooms','staffs','roomstotal','staffstotal','departtotal'));
+    }
 
 }

@@ -2,19 +2,25 @@
 <html lang="en">
 
 
-<!-- Mirrored from themewagon.github.io/hotelier/about.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 05 Mar 2025 08:05:02 GMT -->
+<!-- Mirrored from themewagon.github.io/hotelier/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 05 Mar 2025 08:04:58 GMT -->
 <!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
 <head>
     <meta charset="utf-8">
-    <title>GeniusHotel | About</title>
+    <title>GeniusHotel | Pricing</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
-
-    <!-- Favicon -->
-    <link href="{{ asset('Home-assets/cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css')}}" rel="stylesheet">
-<link href="{{ asset('Home-assets/cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css')}}" rel="stylesheet">
+<!-- Favicon -->
 <link href="{{url('assets/images/logo.png')}}" rel="icon">
+
+<!-- Google Web Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com/">
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700&amp;family=Montserrat:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+
+<!-- Icon Font Stylesheet -->
+<link href="{{ asset('Home-assets/cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css')}}" rel="stylesheet">
+<link href="{{ asset('Home-assets/cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css')}}" rel="stylesheet">
 
 <!-- Libraries Stylesheet -->
 <link href="{{ asset('Home-assets/lib/animate/animate.min.css')}}" rel="stylesheet">
@@ -40,8 +46,8 @@
         </div>
         <!-- Spinner End -->
 
-     <!-- Header Start -->
-     <div class="container-fluid bg-dark px-0">
+      <!-- Header Start -->
+      <div class="container-fluid bg-dark px-0">
         <div class="row gx-0">
             <div class="col-lg-3 bg-dark d-none d-lg-block">
                 <a href="{{ url('/') }}" class="navbar-brand w-100 h-100 m-0 p-0 d-flex align-items-center justify-content-center">
@@ -82,11 +88,21 @@
                             <a href="{{ url('/') }}" class="nav-item nav-link active">Home</a>
                             <a href="{{ url('about-us') }}" class="nav-item nav-link">About</a>
                             <a href="{{ url('services') }}" class="nav-item nav-link">Services</a>
-                                <a href="{{ url('pricing') }}" class="nav-item nav-link">Pricing</a>
+                             <a href="{{ url('pricing') }}" class="nav-item nav-link">Pricing</a>
                             <a href="{{ url('our-rooms') }}" class="nav-item nav-link">Rooms</a>
                             <a href="{{ url('contact') }}" class="nav-item nav-link">Contact</a>
                         </div>
-                        @auth
+                        {{-- @auth
+                        <a style="margin-left:150px;" class="btn btn-primary py-2 px-3 mt-1" href="{{ route('logout') }}">Logout</a>
+
+                        <!-- Show Booking button when user is logged in -->
+                        <a style="margin-right:150px;" class="btn btn-primary py-2 px-3 mt-1" href="{{ route('booking.form') }}">Booking</a>
+                    @else
+                        <!-- Show Login button when user is NOT logged in -->
+                        <a style="margin-right:150px;" class="btn btn-primary py-2 px-3 mt-1" href="{{ route('login') }}">Login</a>
+                    @endauth --}}
+
+                    @auth
                            <a style="margin-left:150px;" class="btn btn-primary py-2 px-3 mt-1" href="{{ route('logout') }}">Logout</a>
                            <a style="margin-right:150px;" class="btn btn-primary py-2 px-3 mt-1" href="{{ route('booking.form') }}">Booking</a>
                        @else
@@ -103,149 +119,76 @@
     <!-- Header End -->
 
 
-        <!-- Page Header Start -->
-        <div class="container-fluid page-header mb-5 p-0" style="background-image: url({{ asset('Home-assets/img/carousel-1.jpg')}});">
-            <div class="container-fluid page-header-inner py-5">
-                <div class="container text-center pb-5">
-                    <h1 class="display-3 text-white mb-3 animated slideInDown">About Us</h1>
-                    <nav aria-label="breadcrumb">
-                        <ol class="breadcrumb justify-content-center text-uppercase">
-                            <li class="breadcrumb-item"><a href="#">Home</a></li>
-                            {{-- <li class="breadcrumb-item"><a href="#">Pages</a></li> --}}
-                            {{-- <li class="breadcrumb-item text-white active" aria-current="page">About</li> --}}
-                        </ol>
-                    </nav>
-                </div>
-            </div>
+  <!-- Page Header Start -->
+  <div class="container-fluid page-header mb-5 p-0" style="background-image: url({{ asset('Home-assets/img/carousel-1.jpg')}});">
+    <div class="container-fluid page-header-inner py-5">
+        <div class="container text-center pb-5">
+            <h1 class="display-3 text-white mb-3 animated slideInDown">Pricing</h1>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb justify-content-center text-uppercase">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    {{-- <li class="breadcrumb-item"><a href="#">Pages</a></li> --}}
+                    {{-- <li class="breadcrumb-item text-white active" aria-current="page">Rooms</li> --}}
+                </ol>
+            </nav>
         </div>
-        <!-- Page Header End -->
+    </div>
+</div>
+<!-- Page Header End -->
+
+<section class="pricing-section">
+  <h2 class="section-title">Our Pricing Plans</h2>
+  <div class="pricing-cards">
+    <!-- Free Plan -->
+    <div class="pricing-card">
+      <h3>Free</h3>
+      <div class="price">0% Commission</div>
+      {{-- <div class="billing-period">per booking</div> --}}
+      <ul class="features">
+        <li>Basic features</li>
+        <li>Up to 10 bookings/month</li>
+        <li>Limited support</li>
+      </ul>
+      <button class="btn-select btn btn-primary">Get Started</button>
+    </div>
+
+    <!-- Standard Plan -->
+    <div class="pricing-card">
+      <h3>Standard</h3>
+      <div class="price">20% Commission</div>
+      <h5 class="billing-period">per booking</h5>
+      <ul class="features">
+        <li>All Free plan features</li>
+        <li>Unlimited bookings</li>
+        <li>Priority support</li>
+        <li>Access to premium features</li>
+      </ul>
+      <button class="btn-select btn btn-primary">Choose Standard</button>
+    </div>
+
+    <!-- Premium Plan -->
+    <div class="pricing-card">
+      <h3>Premium</h3>
+      <div class="price">10% Commission</div>
+      <h5 class="billing-period">per booking</h5>
+      <ul class="features">
+        <li>All Standard features</li>
+        <li>Dedicated account manager</li>
+        <li>Advanced analytics</li>
+        <li>Early access to new features</li>
+      </ul>
+      <button class="btn-select btn btn-primary">Choose Premium</button>
+    </div>
+  </div>
+</section>
 
 
-
-
-
-        <!-- About Start -->
-        <div class="container-xxl py-5">
-            <div class="container">
-                <div class="row g-5 align-items-center">
-                    <div class="col-lg-6">
-                        <h6 class="section-title text-start text-primary text-uppercase">About Us</h6>
-                        <h1 class="mb-4">Welcome to <span class="text-primary text-uppercase">GeniusHotel</span></h1>
-                        <p class="mb-4">We are dedicated to providing an exceptional hospitality experience where comfort meets
-                             elegance and every guest is treated with personalized care. Our mission is to create memorable stays by
-                              combining modern amenities with warm, attentive service in a welcoming atmosphere. 
-                              Whether you are visiting for business or leisure, we strive to exceed your expectations 
-                              and make you feel right at home. With a focus on quality and attention to detail, 
-                              we ensure every aspect of your visit is seamless and enjoyable, from the moment you arrive 
-                              until your departure. Our team is passionate
-                             about delivering excellence and creating lasting impressions that keep our guests 
-                             coming back time and time again.</p>
-                        <div class="row g-3 pb-4">
-                            <div class="col-sm-4 wow fadeIn" data-wow-delay="0.1s">
-                                <div class="border rounded p-1">
-                                    <div class="border rounded text-center p-4">
-                                        <i class="fa fa-hotel fa-2x text-primary mb-2"></i>
-                                        <h2 class="mb-1" data-toggle="counter-up">{{$roomstotal}}</h2>
-                                        <p class="mb-0">Rooms</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-4 wow fadeIn" data-wow-delay="0.3s">
-                                <div class="border rounded p-1">
-                                    <div class="border rounded text-center p-4">
-                                        <i class="fa fa-users-cog fa-2x text-primary mb-2"></i>
-                                        <h2 class="mb-1" data-toggle="counter-up">{{$staffstotal}}</h2>
-                                        <p class="mb-0">Staffs</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-4 wow fadeIn" data-wow-delay="0.5s">
-                                <div class="border rounded p-1">
-                                    <div class="border rounded text-center p-4">
-                                        <i class="fa fa-users fa-2x text-primary mb-2"></i>
-                                        <h2 class="mb-1" data-toggle="counter-up">{{$departtotal}}</h2>
-                                        <p class="mb-0">Departments</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <a class="btn btn-primary py-3 px-5 mt-2" href="#">Explore More</a>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="row g-3">
-                            <div class="col-6 text-end">
-                                <img class="img-fluid rounded w-75 wow zoomIn" data-wow-delay="0.1s" src="{{ asset('Home-assets/img/about-1.jpg')}}" style="margin-top: 25%;">
-                            </div>
-                            <div class="col-6 text-start">
-                                <img class="img-fluid rounded w-100 wow zoomIn" data-wow-delay="0.3s" src="{{ asset('Home-assets/img/about-2.jpg')}}">
-                            </div>
-                            <div class="col-6 text-end">
-                                <img class="img-fluid rounded w-50 wow zoomIn" data-wow-delay="0.5s" src="{{ asset('Home-assets/img/about-3.jpg')}}">
-                            </div>
-                            <div class="col-6 text-start">
-                                <img class="img-fluid rounded w-75 wow zoomIn" data-wow-delay="0.7s" src="{{ asset('Home-assets/img/about-4.jpg')}}">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- About End -->
-
-
-        <!-- Team Start -->
-          {{-- <div class="container-xxl py-5">
-            <div class="container">
-                <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-                    <h6 class="section-title text-center text-primary text-uppercase">Our Team</h6>
-                    <h1 class="mb-5">Explore Our <span class="text-primary text-uppercase">Staffs</span></h1>
-                </div>
-                <div class="row g-4">
-                    @foreach ($staffs as $index => $staff)
-                        <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="{{ 0.1 + ($index % 4) * 0.2 }}s">
-                            <div class="rounded shadow overflow-hidden">
-                                <div class="position-relative">
-                                    <img class="img-fluid" src="{{ asset('assets/StaffImages/' . $staff->photo) }}" alt="">
-                                    <div class="position-absolute start-50 top-100 translate-middle d-flex align-items-center">
-                                        <a class="btn btn-square btn-primary mx-1" href="#"><i class="fab fa-facebook-f"></i></a>
-                                        <a class="btn btn-square btn-primary mx-1" href="#"><i class="fab fa-twitter"></i></a>
-                                        <a class="btn btn-square btn-primary mx-1" href="#"><i class="fab fa-instagram"></i></a>
-                                    </div>
-                                </div>
-                                <div class="text-center p-4 mt-3">
-                                    <h5 class="fw-bold mb-0">{{ $staff->full_name }}</h5>
-                                    <small>{{ $staff->department->title }}</small> <!-- Fetching department name -->
-                                </div>
-                            </div>
-                        </div>
-                    @endforeach
-                </div>
-            </div>
-        </div> --}}
-        <!-- Team End -->
-
-
-        <!-- Newsletter Start -->
-        {{-- <div class="container newsletter mt-5 wow fadeIn" data-wow-delay="0.1s">
-            <div class="row justify-content-center">
-                <div class="col-lg-10 border rounded p-1">
-                    <div class="border rounded text-center p-1">
-                        <div class="bg-white rounded text-center p-5">
-                            <h4 class="mb-4">Subscribe Our <span class="text-primary text-uppercase">Newsletter</span></h4>
-                            <div class="position-relative mx-auto" style="max-width: 400px;">
-                                <input class="form-control w-100 py-3 ps-4 pe-5" type="text" placeholder="Enter your email">
-                                <button type="button" class="btn btn-primary py-2 px-3 position-absolute top-0 end-0 mt-2 me-2">Submit</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div> --}}
-        <!-- Newsletter Start -->
-        
+<br>
+<br>
+<br>
 
         <!-- Footer Start -->
-      <div class="container-fluid bg-dark text-light footer wow fadeIn" data-wow-delay="0.1s">
+    <div class="container-fluid bg-dark text-light footer wow fadeIn" data-wow-delay="0.1s">
             <div class="container pb-5">
                 <div class="row g-5">
                     <div class="col-md-6 col-lg-4">
@@ -339,5 +282,5 @@
 </body>
 
 
-<!-- Mirrored from themewagon.github.io/hotelier/about.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 05 Mar 2025 08:05:02 GMT -->
+<!-- Mirrored from themewagon.github.io/hotelier/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 05 Mar 2025 08:05:02 GMT -->
 </html>

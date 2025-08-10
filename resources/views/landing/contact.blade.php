@@ -6,10 +6,12 @@
 <!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
 <head>
     <meta charset="utf-8">
-    <title>Hotelier | Contact</title>
+    <title>GeniusHotel | Contact</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
+    
+<link href="{{url('assets/images/logo.png')}}" rel="icon">
 
     <link href="{{ asset('Home-assets/cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css')}}" rel="stylesheet">
     <link href="{{ asset('Home-assets/cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css')}}" rel="stylesheet">
@@ -43,7 +45,7 @@
         <div class="row gx-0">
             <div class="col-lg-3 bg-dark d-none d-lg-block">
                 <a href="{{ url('/') }}" class="navbar-brand w-100 h-100 m-0 p-0 d-flex align-items-center justify-content-center">
-                    <h1 class="m-0 text-primary text-uppercase">Hotelier</h1>
+                    <h1 class="m-0 text-primary text-uppercase">GeniusHotel</h1>
                 </a>
             </div>
             <div class="col-lg-9">
@@ -51,11 +53,11 @@
                     <div class="col-lg-7 px-5 text-start">
                         <div class="h-100 d-inline-flex align-items-center py-2 me-4">
                             <i class="fa fa-envelope text-primary me-2"></i>
-                            <p class="mb-0">info@example.com</p>
+                            <p class="mb-0">mbaga0345@gmail.com</p>
                         </div>
                         <div class="h-100 d-inline-flex align-items-center py-2">
                             <i class="fa fa-phone-alt text-primary me-2"></i>
-                            <p class="mb-0">+012 345 6789</p>
+                            <p class="mb-0">(+255) 681 969 339</p>
                         </div>
                     </div>
                     <div class="col-lg-5 px-5 text-end">
@@ -70,7 +72,7 @@
                 </div>
                 <nav class="navbar navbar-expand-lg bg-dark navbar-dark p-3 p-lg-0">
                     <a href="{{ url('/') }}" class="navbar-brand d-block d-lg-none">
-                        <h1 class="m-0 text-primary text-uppercase">Hotelier</h1>
+                        <h1 class="m-0 text-primary text-uppercase">GeniusHotel</h1>
                     </a>
                     <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                         <span class="navbar-toggler-icon"></span>
@@ -80,18 +82,17 @@
                             <a href="{{ url('/') }}" class="nav-item nav-link active">Home</a>
                             <a href="{{ url('about-us') }}" class="nav-item nav-link">About</a>
                             <a href="{{ url('services') }}" class="nav-item nav-link">Services</a>
+                            <a href="{{ url('pricing') }}" class="nav-item nav-link">Pricing</a>
                             <a href="{{ url('our-rooms') }}" class="nav-item nav-link">Rooms</a>
                             <a href="{{ url('contact') }}" class="nav-item nav-link">Contact</a>
                         </div>
-                        @auth
-                        <a style="margin-left:150px;" class="btn btn-primary py-2 px-3 mt-1" href="{{ route('logout') }}">Logout</a>
-
-                        <!-- Show Booking button when user is logged in -->
-                        <a style="margin-right:150px;" class="btn btn-primary py-2 px-3 mt-1" href="{{ route('booking.form') }}">Booking</a>
-                    @else
-                        <!-- Show Login button when user is NOT logged in -->
-                        <a style="margin-right:150px;" class="btn btn-primary py-2 px-3 mt-1" href="{{ route('login') }}">Login</a>
-                    @endauth
+                       @auth
+                           <a style="margin-left:150px;" class="btn btn-primary py-2 px-3 mt-1" href="{{ route('logout') }}">Logout</a>
+                           <a style="margin-right:150px;" class="btn btn-primary py-2 px-3 mt-1" href="{{ route('booking.form') }}">Booking</a>
+                       @else
+                           <!-- User is not logged in, show only Start a Free Trial button -->
+                           <a style="margin-right:150px;" class="btn btn-primary py-2 px-3 mt-1" href="#">Start a Free Trial</a>
+                       @endauth
                     
                     </div>
                 </nav>
@@ -177,16 +178,16 @@
                     <div class="col-12">
                         <div class="row gy-4">
                             <div class="col-md-4">
-                                <h6 class="section-title text-start text-primary text-uppercase">Booking</h6>
-                                <p><i class="fa fa-envelope-open text-primary me-2"></i>book@example.com</p>
+                                <h6 class="section-title text-start text-primary text-uppercase">Address</h6>
+                                <p><i class="fa fa-map-marker text-primary me-2"></i>Kilimanjaro, Tanzania</p>
                             </div>
                             <div class="col-md-4">
-                                <h6 class="section-title text-start text-primary text-uppercase">General</h6>
-                                <p><i class="fa fa-envelope-open text-primary me-2"></i>info@example.com</p>
+                                <h6 class="section-title text-start text-primary text-uppercase">Phone</h6>
+                                <p><i class="fa fa-phone-alt text-primary me-2"></i>(+255) 681 969 339</p>
                             </div>
                             <div class="col-md-4">
-                                <h6 class="section-title text-start text-primary text-uppercase">Technical</h6>
-                                <p><i class="fa fa-envelope-open text-primary me-2"></i>tech@example.com</p>
+                                <h6 class="section-title text-start text-primary text-uppercase">Email</h6>
+                                <p><i class="fa fa-envelope-open text-primary me-2"></i>mbaga0345@gmail.com</p>
                             </div>
                         </div>
                     </div>
@@ -260,22 +261,23 @@
         
 
         <!-- Footer Start -->
-        <div class="container-fluid bg-dark text-light footer wow fadeIn" data-wow-delay="0.1s">
+       <div class="container-fluid bg-dark text-light footer wow fadeIn" data-wow-delay="0.1s">
             <div class="container pb-5">
                 <div class="row g-5">
                     <div class="col-md-6 col-lg-4">
                         <div class="bg-primary rounded p-4">
-                            <a href="index.html"><h1 class="text-white text-uppercase mb-3">Hotelier</h1></a>
+                            <a href="index.html"><h1 class="text-white text-uppercase mb-3">GeniusHotel</h1></a>
                             <p class="text-white mb-0">
-								Download <a class="text-dark fw-medium" href="https://htmlcodex.com/hotel-html-template-pro">Hotelier – Premium Version</a>, build a professional website for your hotel business and grab the attention of new visitors upon your site’s launch.
+								Step into a world of unparalleled luxury and sophistication where every detail is 
+                            crafted to offer you an extraordinary stay.
 							</p>
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-3">
                         <h6 class="section-title text-start text-primary text-uppercase mb-4">Contact</h6>
-                        <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
-                        <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
-                        <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@example.com</p>
+                        <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Kilimanjaro, Tanzania</p>
+                        <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>(+255) 681 969 339</p>
+                        <p class="mb-2"><i class="fa fa-envelope me-3"></i>mbaga0345@gmail.com</p>
                         <div class="d-flex pt-2">
                             <a class="btn btn-outline-light btn-social" href="#"><i class="fab fa-twitter"></i></a>
                             <a class="btn btn-outline-light btn-social" href="#"><i class="fab fa-facebook-f"></i></a>
@@ -289,6 +291,7 @@
                                 <h6 class="section-title text-start text-primary text-uppercase mb-4">Company</h6>
                                 <a  href="{{ url('about-us') }}" class="nav-item nav-link text-white">About</a>
                                 <a href="{{url('services')}}" class="nav-item nav-link text-white">Services</a>
+                                <a href="{{ url('pricing') }}" class="nav-item nav-link">Pricing</a>
                                 <a href="{{ url('our-rooms') }}" class="nav-item nav-link text-white">Rooms</a>
                                 <a href="{{ url('contact') }}" class="nav-item nav-link text-white">Contact</a>
                             </div>
@@ -308,7 +311,7 @@
                 <div class="copyright">
                     <div class="row">
                         <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                            &copy; <a class="border-bottom" href="#">Hotelier</a>, All Right Reserved. 
+                            &copy; <a class="border-bottom" href="#">GeniusHotel</a>, All Right Reserved. 
 							
 							<!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
 							Designed By <a class="border-bottom" href="#">Tech Genius</a>

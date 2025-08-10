@@ -43,12 +43,19 @@ use App\Http\Controllers\Auth\PasswordResetLinkController;
 
 Route::get('/',[HomeLandingController::class,'HomeIndex']);
 
-Route::get('about-us', function () {
-    return view('landing.about-us');
-});
+Route::get('about-us',[HomeLandingController::class,'AboutIndex']);
+
+
+// Route::get('about-us', function () {
+//     return view('landing.about-us');
+// });
 
 Route::get('services', function () {
     return view('landing.services');
+});
+
+Route::get('pricing', function () {
+    return view('landing.pricing');
 });
 
 Route::get('our-rooms',[RoomController::class, 'get_rooms'])->name('rooms.page');

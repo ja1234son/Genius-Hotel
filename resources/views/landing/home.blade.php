@@ -6,7 +6,7 @@
 <!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
 <head>
     <meta charset="utf-8">
-    <title>Hotelier</title>
+    <title>GeniusHotel</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -51,7 +51,7 @@
             <div class="row gx-0">
                 <div class="col-lg-3 bg-dark d-none d-lg-block">
                     <a href="{{ url('/') }}" class="navbar-brand w-100 h-100 m-0 p-0 d-flex align-items-center justify-content-center">
-                        <h1 class="m-0 text-primary text-uppercase">Hotelier</h1>
+                        <h1 class="m-0 text-primary text-uppercase">GeniusHotel</h1>
                     </a>
                 </div>
                 <div class="col-lg-9">
@@ -59,11 +59,11 @@
                         <div class="col-lg-7 px-5 text-start">
                             <div class="h-100 d-inline-flex align-items-center py-2 me-4">
                                 <i class="fa fa-envelope text-primary me-2"></i>
-                                <p class="mb-0">info@example.com</p>
+                                <p class="mb-0">mbaga0345@gmail.com</p>
                             </div>
                             <div class="h-100 d-inline-flex align-items-center py-2">
                                 <i class="fa fa-phone-alt text-primary me-2"></i>
-                                <p class="mb-0">+012 345 6789</p>
+                                <p class="mb-0">(+255) 681 969 339</p>
                             </div>
                         </div>
                         <div class="col-lg-5 px-5 text-end">
@@ -78,7 +78,7 @@
                     </div>
                     <nav class="navbar navbar-expand-lg bg-dark navbar-dark p-3 p-lg-0">
                         <a href="{{ url('/') }}" class="navbar-brand d-block d-lg-none">
-                            <h1 class="m-0 text-primary text-uppercase">Hotelier</h1>
+                            <h1 class="m-0 text-primary text-uppercase">GeniusHotel</h1>
                         </a>
                         <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                             <span class="navbar-toggler-icon"></span>
@@ -88,18 +88,18 @@
                                 <a href="{{ url('/') }}" class="nav-item nav-link active">Home</a>
                                 <a href="{{ url('about-us') }}" class="nav-item nav-link">About</a>
                                 <a href="{{ url('services') }}" class="nav-item nav-link">Services</a>
+                                <a href="{{ url('pricing') }}" class="nav-item nav-link">Pricing</a>
                                 <a href="{{ url('our-rooms') }}" class="nav-item nav-link">Rooms</a>
                                 <a href="{{ url('contact') }}" class="nav-item nav-link">Contact</a>
                             </div>
-                            @auth
-                            <a style="margin-left:150px;" class="btn btn-primary py-2 px-3 mt-1" href="{{ route('logout') }}">Logout</a>
+                           @auth
+                           <a style="margin-left:150px;" class="btn btn-primary py-2 px-3 mt-1" href="{{ route('logout') }}">Logout</a>
+                           <a style="margin-right:150px;" class="btn btn-primary py-2 px-3 mt-1" href="{{ route('booking.form') }}">Booking</a>
+                       @else
+                           <!-- User is not logged in, show only Start a Free Trial button -->
+                           <a style="margin-right:150px;" class="btn btn-primary py-2 px-3 mt-1" href="#">Start a Free Trial</a>
+                       @endauth
 
-                            <!-- Show Booking button when user is logged in -->
-                            <a style="margin-right:150px;" class="btn btn-primary py-2 px-3 mt-1" href="{{ route('booking.form') }}">Booking</a>
-                        @else
-                            <!-- Show Login button when user is NOT logged in -->
-                            <a style="margin-right:150px;" class="btn btn-primary py-2 px-3 mt-1" href="{{ route('login') }}">Login</a>
-                        @endauth
                         
                         </div>
                     </nav>
@@ -129,8 +129,8 @@
                         <img class="w-100" src="{{ asset('Home-assets/img/carousel-2.jpg')}}" alt="Image">
                         <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                             <div class="p-3" style="max-width: 700px;">
-                                <h6 class="section-title text-white text-uppercase mb-3 animated slideInDown">Luxury Living</h6>
-                                <h1 class="display-3 text-white mb-4 animated slideInDown">Discover A Brand Luxurious Hotel</h1>
+                                <h6 class="section-title text-white text-uppercase mb-3 animated slideInDown">Exclusive Comfort</h6>
+                                <h1 class="display-3 text-white mb-4 animated slideInDown">Unmatched Elegance & Style</h1>
                                 <a href="{{url('our-rooms')}}" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Our Rooms</a>
                                 <a href="{{route('booking.form')}}" class="btn btn-light py-md-3 px-md-5 animated slideInRight">Book A Room</a>
                             </div>
@@ -204,8 +204,16 @@
         <div class="row g-5 align-items-center">
             <div class="col-lg-6">
                 <h6 class="section-title text-start text-primary text-uppercase">About Us</h6>
-                <h1 class="mb-4">Welcome to <span class="text-primary text-uppercase">Hotelier</span></h1>
-                <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
+                <h1 class="mb-4">Welcome to <span class="text-primary text-uppercase">GeniusHotel</span></h1>
+                <p class="mb-4">We are dedicated to providing an exceptional hospitality experience where comfort meets
+                             elegance and every guest is treated with personalized care. Our mission is to create memorable stays by
+                              combining modern amenities with warm, attentive service in a welcoming atmosphere. 
+                              Whether you are visiting for business or leisure, we strive to exceed your expectations 
+                              and make you feel right at home. With a focus on quality and attention to detail, 
+                              we ensure every aspect of your visit is seamless and enjoyable, from the moment you arrive 
+                              until your departure. Our team is passionate
+                             about delivering excellence and creating lasting impressions that keep our guests 
+                             coming back time and time again.</p>
                 <div class="row g-3 pb-4">
                     <div class="col-sm-4 wow fadeIn" data-wow-delay="0.1s">
                         <div class="border rounded p-1">
@@ -321,22 +329,24 @@
                     <div class="p-5">
                         <h6 class="section-title text-start text-white text-uppercase mb-3">Luxury Living</h6>
                         <h1 class="text-white mb-4">Discover A Brand Luxurious Hotel</h1>
-                        <p class="text-white mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
-                        <a href="#" class="btn btn-primary py-md-3 px-md-5 me-3">Our Rooms</a>
-                        <a href="#" class="btn btn-light py-md-3 px-md-5">Book A Room</a>
+                        <p class="text-white mb-4">Step into a world of unparalleled luxury and sophistication where every detail is 
+                            crafted to offer you an extraordinary stay. Our hotel combines exquisite design,
+                             top-tier amenities, and exceptional service to create an environment of comfort and elegance.</p>
+                        <a href="{{url('our-rooms')}}" class="btn btn-primary py-md-3 px-md-5 me-3">Our Rooms</a>
+                        <a href="{{route('booking.form')}}" class="btn btn-light py-md-3 px-md-5">Book A Room</a>
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="video">
-                        <button type="button" class="btn-play" data-bs-toggle="modal" data-src="https://www.youtube.com/embed/DWRcNpR6Kdc" data-bs-target="#videoModal">
+                        {{-- <button type="button" class="btn-play" data-bs-toggle="modal" data-src="https://www.youtube.com/embed/DWRcNpR6Kdc" data-bs-target="#videoModal">
                             <span></span>
-                        </button>
+                        </button> --}}
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        {{-- <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content rounded-0">
                     <div class="modal-header">
@@ -352,7 +362,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> --}}
         <!-- Video Start -->
 
 
@@ -372,7 +382,10 @@
                                 </div>
                             </div>
                             <h5 class="mb-3">Rooms & Appartment</h5>
-                            <p class="text-body mb-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
+                            <p class="text-body mb-0">Experience comfort and elegance in 
+                                our spacious rooms and apartments designed to meet all your needs.
+                                 Each space is thoughtfully furnished to provide a relaxing atmosphere
+                                  and modern amenities for a memorable stay.</p>
                         </a>
                     </div>
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
@@ -383,7 +396,9 @@
                                 </div>
                             </div>
                             <h5 class="mb-3">Food & Restaurant</h5>
-                            <p class="text-body mb-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
+                            <p class="text-body mb-0">Savor a delightful culinary journey with our diverse menu, 
+                                crafted by expert chefs using fresh, local ingredients.
+                                 Our restaurant offers a perfect ambiance for casual dining or special occasions.</p>
                         </a>
                     </div>
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
@@ -394,7 +409,10 @@
                                 </div>
                             </div>
                             <h5 class="mb-3">Spa & Fitness</h5>
-                            <p class="text-body mb-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
+                            <p class="text-body mb-0">Rejuvenate your body and mind with
+                                 our full range of spa treatments and wellness facilities. 
+                                From relaxing massages to state-of-the-art fitness equipment,
+                                 we help you stay refreshed and energized.</p>
                         </a>
                     </div>
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
@@ -405,7 +423,9 @@
                                 </div>
                             </div>
                             <h5 class="mb-3">Sports & Gaming</h5>
-                            <p class="text-body mb-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
+                            <p class="text-body mb-0">Enjoy a variety of sports and gaming 
+                                options to keep you entertained throughout your stay. Whether you prefer swimming, t
+                                able tennis, or other recreational activities, there’s something for everyone.</p>
                         </a>
                     </div>
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
@@ -416,7 +436,9 @@
                                 </div>
                             </div>
                             <h5 class="mb-3">Event & Party</h5>
-                            <p class="text-body mb-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
+                            <p class="text-body mb-0">Host unforgettable events and celebrations in our elegant
+                                 venues equipped with modern amenities and professional support. Perfect for weddings, 
+                                corporate gatherings, or private parties.</p>
                         </a>
                     </div>
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
@@ -427,7 +449,9 @@
                                 </div>
                             </div>
                             <h5 class="mb-3">GYM & Yoga</h5>
-                            <p class="text-body mb-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
+                            <p class="text-body mb-0">Maintain your fitness routine with access to our fully equipped 
+                                gym and guided yoga sessions. 
+                                Our facilities cater to all skill levels, helping you achieve balance and wellness during your visit.</p>
                         </a>
                     </div>
                 </div>
@@ -437,50 +461,51 @@
 
 
         <!-- Testimonial Start -->
-        <div class="container-xxl testimonial my-5 py-5 bg-dark wow zoomIn" data-wow-delay="0.1s">
-            <div class="container">
-                <div class="owl-carousel testimonial-carousel py-5">
-                    <div class="testimonial-item position-relative bg-white rounded overflow-hidden">
-                        <p>Tempor stet labore dolor clita stet diam amet ipsum dolor duo ipsum rebum stet dolor amet diam stet. Est stet ea lorem amet est kasd kasd et erat magna eos</p>
-                        <div class="d-flex align-items-center">
-                            <img class="img-fluid flex-shrink-0 rounded" src="{{ asset('Home-assets/img/testimonial-1.jpg')}}" style="width: 45px; height: 45px;">
-                            <div class="ps-3">
-                                <h6 class="fw-bold mb-1">Client Name</h6>
-                                <small>Profession</small>
-                            </div>
-                        </div>
-                        <i class="fa fa-quote-right fa-3x text-primary position-absolute end-0 bottom-0 me-4 mb-n1"></i>
-                    </div>
-                    <div class="testimonial-item position-relative bg-white rounded overflow-hidden">
-                        <p>Tempor stet labore dolor clita stet diam amet ipsum dolor duo ipsum rebum stet dolor amet diam stet. Est stet ea lorem amet est kasd kasd et erat magna eos</p>
-                        <div class="d-flex align-items-center">
-                            <img class="img-fluid flex-shrink-0 rounded" src="{{ asset('Home-assets/img/testimonial-2.jpg')}}" style="width: 45px; height: 45px;">
-                            <div class="ps-3">
-                                <h6 class="fw-bold mb-1">Client Name</h6>
-                                <small>Profession</small>
-                            </div>
-                        </div>
-                        <i class="fa fa-quote-right fa-3x text-primary position-absolute end-0 bottom-0 me-4 mb-n1"></i>
-                    </div>
-                    <div class="testimonial-item position-relative bg-white rounded overflow-hidden">
-                        <p>Tempor stet labore dolor clita stet diam amet ipsum dolor duo ipsum rebum stet dolor amet diam stet. Est stet ea lorem amet est kasd kasd et erat magna eos</p>
-                        <div class="d-flex align-items-center">
-                            <img class="img-fluid flex-shrink-0 rounded" src="{{ asset('Home-assets/img/testimonial-3.jpg')}}" style="width: 45px; height: 45px;">
-                            <div class="ps-3">
-                                <h6 class="fw-bold mb-1">Client Name</h6>
-                                <small>Profession</small>
-                            </div>
-                        </div>
-                        <i class="fa fa-quote-right fa-3x text-primary position-absolute end-0 bottom-0 me-4 mb-n1"></i>
+<div class="container-xxl testimonial my-5 py-5 bg-dark wow zoomIn" data-wow-delay="0.1s">
+    <div class="container">
+        <div class="owl-carousel testimonial-carousel py-5">
+            <div class="testimonial-item position-relative bg-white rounded overflow-hidden">
+                <p>"Staying here was an absolute delight. The rooms were immaculate, and the staff went above and beyond to make our stay comfortable. Highly recommend!"</p>
+                <div class="d-flex align-items-center">
+                    <img class="img-fluid flex-shrink-0 rounded" src="{{ asset('Home-assets/img/testimonial-1.jpg')}}" style="width: 45px; height: 45px;">
+                    <div class="ps-3">
+                        <h6 class="fw-bold mb-1">Sofia L.</h6>
+                        <small>Travel Blogger</small>
                     </div>
                 </div>
+                <i class="fa fa-quote-right fa-3x text-primary position-absolute end-0 bottom-0 me-4 mb-n1"></i>
+            </div>
+            <div class="testimonial-item position-relative bg-white rounded overflow-hidden">
+                <p>"The spa and fitness center are top-notch. After a long day of sightseeing, relaxing here was exactly what we needed. The experience was truly rejuvenating."</p>
+                <div class="d-flex align-items-center">
+                    <img class="img-fluid flex-shrink-0 rounded" src="{{ asset('Home-assets/img/testimonial-2.jpg')}}" style="width: 45px; height: 45px;">
+                    <div class="ps-3">
+                        <h6 class="fw-bold mb-1">Michael T.</h6>
+                        <small>Business Executive</small>
+                    </div>
+                </div>
+                <i class="fa fa-quote-right fa-3x text-primary position-absolute end-0 bottom-0 me-4 mb-n1"></i>
+            </div>
+            <div class="testimonial-item position-relative bg-white rounded overflow-hidden">
+                <p>"Fantastic food and wonderful atmosphere. The restaurant exceeded our expectations, offering a diverse menu with fresh, delicious options."</p>
+                <div class="d-flex align-items-center">
+                    <img class="img-fluid flex-shrink-0 rounded" src="{{ asset('Home-assets/img/testimonial-3.jpg')}}" style="width: 45px; height: 45px;">
+                    <div class="ps-3">
+                        <h6 class="fw-bold mb-1">James M.</h6>
+                        <small>Food Critic</small>
+                    </div>
+                </div>
+                <i class="fa fa-quote-right fa-3x text-primary position-absolute end-0 bottom-0 me-4 mb-n1"></i>
             </div>
         </div>
+    </div>
+</div>
+
         <!-- Testimonial End -->
 
 
         <!-- Team Start -->
-        <div class="container-xxl py-5">
+        {{-- <div class="container-xxl py-5">
             <div class="container">
                 <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
                     <h6 class="section-title text-center text-primary text-uppercase">Our Team</h6>
@@ -507,7 +532,7 @@
                     @endforeach
                 </div>
             </div>
-        </div>
+        </div> --}}
         
         <!-- Team End -->
 
@@ -537,17 +562,18 @@
                 <div class="row g-5">
                     <div class="col-md-6 col-lg-4">
                         <div class="bg-primary rounded p-4">
-                            <a href="index.html"><h1 class="text-white text-uppercase mb-3">Hotelier</h1></a>
+                            <a href="index.html"><h1 class="text-white text-uppercase mb-3">GeniusHotel</h1></a>
                             <p class="text-white mb-0">
-								Download <a class="text-dark fw-medium" href="https://htmlcodex.com/hotel-html-template-pro">Hotelier – Premium Version</a>, build a professional website for your hotel business and grab the attention of new visitors upon your site’s launch.
+								Step into a world of unparalleled luxury and sophistication where every detail is 
+                            crafted to offer you an extraordinary stay.
 							</p>
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-3">
                         <h6 class="section-title text-start text-primary text-uppercase mb-4">Contact</h6>
-                        <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
-                        <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
-                        <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@example.com</p>
+                        <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Kilimanjaro, Tanzania</p>
+                        <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>(+255) 681 969 339</p>
+                        <p class="mb-2"><i class="fa fa-envelope me-3"></i>mbaga0345@gmail.com</p>
                         <div class="d-flex pt-2">
                             <a class="btn btn-outline-light btn-social" href="#"><i class="fab fa-twitter"></i></a>
                             <a class="btn btn-outline-light btn-social" href="#"><i class="fab fa-facebook-f"></i></a>
@@ -561,6 +587,7 @@
                                 <h6 class="section-title text-start text-primary text-uppercase mb-4">Company</h6>
                                 <a  href="{{ url('about-us') }}" class="nav-item nav-link text-white">About</a>
                                 <a href="{{url('services')}}" class="nav-item nav-link text-white">Services</a>
+                                <a href="{{ url('pricing') }}" class="nav-item nav-link">Pricing</a>
                                 <a href="{{ url('our-rooms') }}" class="nav-item nav-link text-white">Rooms</a>
                                 <a href="{{ url('contact') }}" class="nav-item nav-link text-white">Contact</a>
                             </div>
@@ -580,7 +607,7 @@
                 <div class="copyright">
                     <div class="row">
                         <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                            &copy; <a class="border-bottom" href="#">Hotelier</a>, All Right Reserved. 
+                            &copy; <a class="border-bottom" href="#">GeniusHotel</a>, All Right Reserved. 
 							
 							<!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
 							Designed By <a class="border-bottom" href="#">Tech Genius</a>
