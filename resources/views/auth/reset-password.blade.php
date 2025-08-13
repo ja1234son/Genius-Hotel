@@ -106,15 +106,14 @@
                                         @include('alerts.warning')
                                         <div class="mt-4">
                                             <form method="POST" action="{{ route('password.store') }}">
-                                                @method('GET')
                                                 @csrf
                                                   <!-- Password Reset Token -->
-                                                <input type="hidden" name="token" value="{{ $request->route('token') }}">
+                                                <input type="hidden" name="token" value="{{ $token }}">
 
                                                 <div class="mb-3">
                                                     <label for="login" class="form-label">Email Address<span
                                                             class="required">*</span></label>
-                                                    <input type="email" class="form-control" id="login"
+                                                    <input type="email" class="form-control" id="email"
                                                         name="email" value="{{ old('email') }}"
                                                         placeholder="Enter your email address">
                                                 </div>
@@ -122,7 +121,7 @@
                                                   <div class="mb-3">
                                                     <label for="login" class="form-label">New Password<span
                                                             class="required">*</span></label>
-                                                    <input type="password" class="form-control" id="login"
+                                                    <input type="password" class="form-control" id="password"
                                                         name="password" value="{{ old('password') }}"
                                                         placeholder="Enter your new password">
                                                 </div>
@@ -130,7 +129,7 @@
                                                 <div class="mb-3">
                                                     <label for="login" class="form-label">Confirm Password<span
                                                             class="required">*</span></label>
-                                                    <input type="password" class="form-control" id="login"
+                                                    <input type="password" class="form-control" id="password_confirmation"
                                                         name="password_confirmation" value="{{ old('password_confirmation') }}"
                                                         placeholder="Confirm your new password">
                                                 </div>
@@ -149,6 +148,7 @@
                                                 <div class="mt-4">
                                                     <button  class="btn btn-warning w-100" type="submit">             
                                                            {{ __('Reset Password') }}
+                                                    </button>
                                                 </div>
                                             </form>
                                         </div>
