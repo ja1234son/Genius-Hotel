@@ -105,7 +105,7 @@
                                         @include('alerts.errors')
                                         @include('alerts.warning')
                                         <div class="mt-4">
-                                            <form method="POST" action="">
+                                            <form method="POST" action="{{route('password.email')}}">
                                                 @csrf
 
                                                 <div class="mb-3">
