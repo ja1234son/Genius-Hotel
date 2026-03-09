@@ -57,7 +57,7 @@
                         </div>
                         <div class="h-100 d-inline-flex align-items-center py-2">
                             <i class="fa fa-phone-alt text-primary me-2"></i>
-                            <p class="mb-0">(+255) 681 969 339</p>
+                            <p class="mb-0">(+255) 651 286 663</p>
                         </div>
                     </div>
                     <div class="col-lg-5 px-5 text-end">
@@ -72,7 +72,7 @@
                 </div>
                 <nav class="navbar navbar-expand-lg bg-dark navbar-dark p-3 p-lg-0">
                     <a href="{{ url('/') }}" class="navbar-brand d-block d-lg-none">
-                        <h1 class="m-0 text-primary text-uppercase">GeniusHotel</h1>
+                        <h1 class="m-0 text-primary text-uppercase">G - Hotel</h1>
                     </a>
                     <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                         <span class="navbar-toggler-icon"></span>
@@ -333,7 +333,7 @@
                 <div class="row g-5">
                     <div class="col-md-6 col-lg-4">
                         <div class="bg-primary rounded p-4">
-                            <a href="index.html"><h1 class="text-white text-uppercase mb-3">GeniusHotel</h1></a>
+                            <a href="index.html"><h1 class="text-white text-uppercase mb-3">G - Hotel</h1></a>
                             <p class="text-white mb-0">
 								Step into a world of unparalleled luxury and sophistication where every detail is 
                             crafted to offer you an extraordinary stay.
@@ -343,7 +343,7 @@
                     <div class="col-md-6 col-lg-3">
                         <h6 class="section-title text-start text-primary text-uppercase mb-4">Contact</h6>
                         <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Kilimanjaro, Tanzania</p>
-                        <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>(+255) 681 969 339</p>
+                        <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>(+255) 651 286 663</p>
                         <p class="mb-2"><i class="fa fa-envelope me-3"></i>mbaga0345@gmail.com</p>
                         <div class="d-flex pt-2">
                             <a class="btn btn-outline-light btn-social" href="#"><i class="fab fa-twitter"></i></a>
