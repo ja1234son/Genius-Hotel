@@ -1,655 +1,718 @@
 <!DOCTYPE html>
 <html lang="en">
 
-
-<!-- Mirrored from themewagon.github.io/hotelier/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 05 Mar 2025 08:04:58 GMT -->
-<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
-<head>
-    <meta charset="utf-8">
+<!-- Mirrored from preview.colorlib.com/theme/unwind/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 14 Aug 2025 14:40:43 GMT -->
+<head><script>(function(w,i,g){w[g]=w[g]||[];if(typeof w[g].push=='function')w[g].push(i)})
+(window,'G-SEKJ4E9T4H','google_tags_first_party');</script><script async src="https://preview.colorlib.com/s9cc/"></script>
+			<script>
+				window.dataLayer = window.dataLayer || [];
+				function gtag(){dataLayer.push(arguments);}
+				gtag('js', new Date());
+				gtag('set', 'developer_id.dYzg1YT', true);
+				gtag('config', 'G-SEKJ4E9T4H');
+			</script>
+			
     <title>GeniusHotel</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="" name="keywords">
-    <meta content="" name="description">
-<!-- Favicon -->
-<link href="{{url('assets/images/logo.png')}}" rel="icon">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<!-- Google Web Fonts -->
-<link rel="preconnect" href="https://fonts.googleapis.com/">
-<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700&amp;family=Montserrat:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com/">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&amp;family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&amp;display=swap" rel="stylesheet">
 
-<!-- Icon Font Stylesheet -->
-<link href="{{ asset('Home-assets/cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css')}}" rel="stylesheet">
-<link href="{{ asset('Home-assets/cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css')}}" rel="stylesheet">
+    <link rel="stylesheet" href="../../../stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../../../cdnjs.cloudflare.com/ajax/libs/ionicons/4.5.6/css/ionicons.min.css">
 
-<!-- Libraries Stylesheet -->
-<link href="{{ asset('Home-assets/lib/animate/animate.min.css')}}" rel="stylesheet">
-<link href="{{ asset('Home-assets/lib/owlcarousel/assets/owl.carousel.min.css')}}" rel="stylesheet">
-<link href="{{ asset('Home-assets/lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css')}}" rel="stylesheet" />
-
-<!-- Customized Bootstrap Stylesheet -->
-<link href="{{ asset('Home-assets/css/bootstrap.min.css')}}" rel="stylesheet">
-
-
-
-<!-- Template Stylesheet -->
-<link href="{{ asset('Home-assets/css/style.css')}}" rel="stylesheet">
+    <link rel="stylesheet" href="{{ asset('Home-assets2/css/animate.css')}}">
+    <link rel="stylesheet" href="{{asset('Home-assets2/css/flaticon.css')}}">
+    <link rel="stylesheet" href="{{asset('Home-assets2/css/tiny-slider.css')}}">
+    <link rel="stylesheet" href="{{asset('Home-assets2/css/glightbox.min.css')}}">
+    <link rel="stylesheet" href="{{asset('Home-assets2/css/aos.css')}}">
+    <link rel="stylesheet" href="{{asset('Home-assets2/css/datepicker.min.css')}}">
+    <link rel="stylesheet" href="{{asset('Home-assets2/css/style.css')}}">
 </head>
-
 <body>
-    <div class="container-xxl bg-white p-0">
-        <!-- Spinner Start -->
-        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
-                <span class="sr-only">Loading...</span>
-            </div>
-        </div>
-        <!-- Spinner End -->
 
-        <!-- Header Start -->
-        <div class="container-fluid bg-dark px-0">
-            <div class="row gx-0">
-                <div class="col-lg-3 bg-dark d-none d-lg-block">
-                    <a href="{{ url('/') }}" class="navbar-brand w-100 h-100 m-0 p-0 d-flex align-items-center justify-content-center">
-                        <h1 class="m-0 text-primary text-uppercase">G - Hotel</h1>
-                    </a>
-                </div>
-                <div class="col-lg-9">
-                    <div class="row gx-0 bg-white d-none d-lg-flex">
-                        <div class="col-lg-7 px-5 text-start">
-                            <div class="h-100 d-inline-flex align-items-center py-2 me-4">
-                                <i class="fa fa-envelope text-primary me-2"></i>
-                                <p class="mb-0">mbaga0345@gmail.com</p>
-                            </div>
-                            <div class="h-100 d-inline-flex align-items-center py-2">
-                                <i class="fa fa-phone-alt text-primary me-2"></i>
-                                <p class="mb-0">(+255) 651 286 663</p>
-                            </div>
-                        </div>
-                        <div class="col-lg-5 px-5 text-end">
-                            <div class="d-inline-flex align-items-center py-2">
-                                <a class="me-3" href="#"><i class="fab fa-facebook-f"></i></a>
-                                <a class="me-3" href="#"><i class="fab fa-twitter"></i></a>
-                                <a class="me-3" href="#"><i class="fab fa-linkedin-in"></i></a>
-                                <a class="me-3" href="#"><i class="fab fa-instagram"></i></a>
-                                <a class="" href="#"><i class="fab fa-youtube"></i></a>
-                            </div>
-                        </div>
+    
+    <nav class="navbar navbar-expand-lg  ftco-navbar-light">
+        <div class="container-xl">
+          <a class="navbar-brand align-items-center" href="index.html">
+             <span class="">Genius<small>Hotel Booking</small></span>
+         </a>
+         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="fa fa-bars"></span> Menu
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+              <li class="nav-item"><a class="nav-link" href="rooms.html">Rooms</a></li>
+              <li class="nav-item"><a class="nav-link" href="resto-bar.html">Resto &amp; Bar</a></li>
+              <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+              <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          </ul>
+          <!-- <p class="mb-0"><a href="#" class="btn btn-primary rounded">Submit A Property</a></p> -->
+      </div>
+  </div>
+</nav>
+
+<section class="hero-wrap" style="background-image: url('{{asset('Home-assets2/images/bg_1.jpg')}}');">
+  <div class="overlay"></div>
+  <div class="container">
+    <div class="row no-gutters slider-text align-items-center justify-content-center">
+       <div class="col-lg-10 text-center">
+          <span class="subheading">Enjoy Your Wonderful Holidays With A Great Luxury Experience!</span>
+          <h1 class="mb-4">Most Relaxing Place</h1>
+          <p><a href="#" class="btn btn-primary p-4 py-3">Take A Tour <span class="ion-ios-arrow-round-forward"></span></a> <a href="#" class="btn btn-white btn-outline-white p-4 py-3">Learn More <span class="ion-ios-arrow-round-forward"></span></a></p>
+      </div>
+  </div>
+</div>
+</section>
+
+<section class="ftco-section ftco-no-pb ftco-no-pt ftco-booking">
+   <div class="container">
+      <div class="row">
+       <div class="col-md-12">
+          <form action="#" class="booking-form">
+             <div class="row g-0">
+                <div class="col-md-6 col-lg form-wrap d-flex py-3 py-lg-5 px-4">
+                   <div class="form-group ps-4 border-0">
+                      <label for="#">Check-In</label>
+                      <div class="form-field">
+                        <div class="icon"><span class="fa fa-calendar"></span></div>
+                        <input type="text" class="form-control arrival_date" placeholder="Check-In Date">
                     </div>
-                    <nav class="navbar navbar-expand-lg bg-dark navbar-dark p-3 p-lg-0">
-                        <a href="{{ url('/') }}" class="navbar-brand d-block d-lg-none">
-                            <h1 class="m-0 text-primary text-uppercase">GeniusHotel</h1>
-                        </a>
-                        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
-                            <div class="navbar-nav mr-auto py-0">
-                                <a href="{{ url('/') }}" class="nav-item nav-link active">Home</a>
-                                <a href="{{ url('about-us') }}" class="nav-item nav-link">About</a>
-                                <a href="{{ url('services') }}" class="nav-item nav-link">Services</a>
-                                <a href="{{ url('pricing') }}" class="nav-item nav-link">Pricing</a>
-                                <a href="{{ url('our-rooms') }}" class="nav-item nav-link">Rooms</a>
-                                <a href="{{ url('contact') }}" class="nav-item nav-link">Contact</a>
-                            </div>
-                           @auth
-                           <a style="margin-left:150px;" class="btn btn-primary py-2 px-3 mt-1" href="{{ route('logout') }}">Logout</a>
-                           <a style="margin-right:150px;" class="btn btn-primary py-2 px-3 mt-1" href="{{ route('booking.form') }}">Booking</a>
-                       @else
-                           <!-- User is not logged in, show only Start a Free Trial button -->
-                           <a style="margin-right:150px;" class="btn btn-primary py-2 px-3 mt-1" href="#">Start a Free Trial</a>
-                       @endauth
-
-                        
-                        </div>
-                    </nav>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg form-wrap d-flex py-3 py-lg-5 px-4">
+               <div class="form-group ps-4">
+                  <label for="#">Check-Out</label>
+                  <div class="form-field">
+                    <div class="icon"><span class="fa fa-calendar"></span></div>
+                    <input type="text" class="form-control departure_date" placeholder="Check-Out Date">
                 </div>
             </div>
         </div>
-        
-        <!-- Header End -->
+        <div class="col-md-6 col-lg form-wrap d-flex py-3 py-lg-5 px-4">
+           <div class="form-group ps-4">
+              <label for="#">Rooms</label>
+              <div class="form-field">
+                <div class="select-wrap">
+                 <div class="icon"><span class="fa fa-chevron-down"></span></div>
+                 <select name="" id="" class="form-control">
+                   <option value="">Suite</option>
+                   <option value="">Family Room</option>
+                   <option value="">Classic Room</option>
+                   <option value="">Superior Room</option>
+                   <option value="">Luxury Room</option>
+               </select>
+           </div>
+       </div>
+   </div>
+</div>
+<div class="col-md-6 col-lg form-wrap d-flex py-3 py-lg-5 px-4">
+   <div class="form-group ps-4">
+      <label for="#">Guests</label>
+      <div class="form-field">
+        <div class="select-wrap">
+         <div class="icon"><span class="fa fa-chevron-down"></span></div>
+         <select name="" id="" class="form-control">
+           <option value="">1 Person</option>
+           <option value="">2 Person</option>
+           <option value="">3 Person</option>
+           <option value="">4 Person</option>
+           <option value="">5 Person</option>
+           <option value="">6-9 Person</option>
+           <option value="">10+ Person</option>
+       </select>
+   </div>
+</div>
+</div>
+</div>
+<div class="col-md-12 col-lg d-flex">
+   <div class="form-group d-flex border-0">
+      <div class="form-field w-100 align-items-center d-flex">
+         <a href="#" type="submit" class="d-flex justify-content-center align-items-center align-self-stretch form-control btn btn-primary py-lg-4 py-xl-0"><span>Check Availability</span></a>
+         <!-- <input type="submit" value="Check Availability" class="align-self-stretch form-control btn btn-primary"> -->
+     </div>
+ </div>
+</div>
+</div>
+</form>
+</div>
+</div>
+</div>
+</section>
 
-
-        <!-- Carousel Start -->
-        <div class="container-fluid p-0 mb-5">
-            <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img class="w-100" src="{{ asset('Home-assets/img/carousel-1.jpg')}}" alt="Image">
-                        <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
-                            <div class="p-3" style="max-width: 700px;">
-                                <h6 class="section-title text-white text-uppercase mb-3 animated slideInDown">Luxury Living</h6>
-                                <h1 class="display-3 text-white mb-4 animated slideInDown">Discover A Brand Luxurious Hotel</h1>
-                                <a href="{{url('our-rooms')}}" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Our Rooms</a>
-                                <a href="{{route('booking.form')}}" class="btn btn-light py-md-3 px-md-5 animated slideInRight">Book A Room</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img class="w-100" src="{{ asset('Home-assets/img/carousel-2.jpg')}}" alt="Image">
-                        <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
-                            <div class="p-3" style="max-width: 700px;">
-                                <h6 class="section-title text-white text-uppercase mb-3 animated slideInDown">Exclusive Comfort</h6>
-                                <h1 class="display-3 text-white mb-4 animated slideInDown">Unmatched Elegance & Style</h1>
-                                <a href="{{url('our-rooms')}}" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Our Rooms</a>
-                                <a href="{{route('booking.form')}}" class="btn btn-light py-md-3 px-md-5 animated slideInRight">Book A Room</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#header-carousel"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div>
-        </div>
-        <!-- Carousel End -->
-
-
-        <!-- Booking Start -->
-        {{-- <div class="container-fluid booking pb-5 wow fadeIn" data-wow-delay="0.1s">
-            <div class="container">
-                <div class="bg-white shadow" style="padding: 35px;">
-                    <div class="row g-2">
-                        <div class="col-md-10">
-                            <div class="row g-2">
-                                <div class="col-md-3">
-                                    <div class="date" id="date1" data-target-input="nearest">
-                                        <input type="text" class="form-control datetimepicker-input"
-                                            placeholder="Check in" data-target="#date1" data-toggle="datetimepicker" />
-                                    </div>
-                                </div>
-                                <div class="col-md-3">
-                                    <div class="date" id="date2" data-target-input="nearest">
-                                        <input type="text" class="form-control datetimepicker-input" placeholder="Check out" data-target="#date2" data-toggle="datetimepicker"/>
-                                    </div>
-                                </div>
-                                <div class="col-md-3">
-                                    <select class="form-select">
-                                        <option selected>Adult</option>
-                                        <option value="1">Adult 1</option>
-                                        <option value="2">Adult 2</option>
-                                        <option value="3">Adult 3</option>
-                                    </select>
-                                </div>
-                                <div class="col-md-3">
-                                    <select class="form-select">
-                                        <option selected>Child</option>
-                                        <option value="1">Child 1</option>
-                                        <option value="2">Child 2</option>
-                                        <option value="3">Child 3</option>
-                                    </select>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-2">
-                            <button class="btn btn-primary w-100">Submit</button>
-                        </div>
+<section class="ftco-section ftco-about-section">
+   <div class="container-xl">
+      <div class="row g-xl-5">
+         <div class="col-md-6" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
+            <div class="row">
+               <div class="col-md-6">
+                  <div class="f-services d-md-flex flex-md-column-reverse">
+                     <div class="img w-100" style="background-image: url({{asset('Home-assets2/images/f-services.jpg')}});"></div>
+                     <div class="text w-100 p-4 text-center mb-md-4">
+                        <div class="icon"><span class="flaticon-pillow"></span></div>
+                        <h3>Cozy Room</h3>
+                        <p>Far far away, behind the word mountains, far from the countries Vokalia.</p>
                     </div>
                 </div>
             </div>
-        </div> --}}
-        <!-- Booking End -->
-
-
-      <!-- About Start -->
- <div class="container-xxl py-5">
-    <div class="container">
-        <div class="row g-5 align-items-center">
-            <div class="col-lg-6">
-                <h6 class="section-title text-start text-primary text-uppercase">About Us</h6>
-                <h1 class="mb-4">Welcome to <span class="text-primary text-uppercase">GeniusHotel</span></h1>
-                <p class="mb-4">We are dedicated to providing an exceptional hospitality experience where comfort meets
-                             elegance and every guest is treated with personalized care. Our mission is to create memorable stays by
-                              combining modern amenities with warm, attentive service in a welcoming atmosphere. 
-                              Whether you are visiting for business or leisure, we strive to exceed your expectations 
-                              and make you feel right at home. With a focus on quality and attention to detail, 
-                              we ensure every aspect of your visit is seamless and enjoyable, from the moment you arrive 
-                              until your departure. Our team is passionate
-                             about delivering excellence and creating lasting impressions that keep our guests 
-                             coming back time and time again.</p>
-                <div class="row g-3 pb-4">
-                    <div class="col-sm-4 wow fadeIn" data-wow-delay="0.1s">
-                        <div class="border rounded p-1">
-                            <div class="border rounded text-center p-4">
-                                <i class="fa fa-hotel fa-2x text-primary mb-2"></i>
-                                <h2 class="mb-1" data-toggle="counter-up">{{$roomstotal}}</h2>
-                                <p class="mb-0">Rooms</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-4 wow fadeIn" data-wow-delay="0.3s">
-                        <div class="border rounded p-1">
-                            <div class="border rounded text-center p-4">
-                                <i class="fa fa-users-cog fa-2x text-primary mb-2"></i>
-                                <h2 class="mb-1" data-toggle="counter-up">{{$staffstotal}}</h2>
-                                <p class="mb-0">Staffs</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-4 wow fadeIn" data-wow-delay="0.5s">
-                        <div class="border rounded p-1">
-                            <div class="border rounded text-center p-4">
-                                <i class="fa fa-users fa-2x text-primary mb-2"></i>
-                                <h2 class="mb-1" data-toggle="counter-up">{{$departtotal}}</h2>
-                                <p class="mb-0">Departments</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <a class="btn btn-primary py-3 px-5 mt-2" href="{{url('about-us')}}">Explore More</a>
-            </div>
-            <div class="col-lg-6">
-                <div class="row g-3">
-                    <div class="col-6 text-end">
-                        <img class="img-fluid rounded w-75 wow zoomIn" data-wow-delay="0.1s" src="{{ asset('Home-assets/img/about-1.jpg')}}" style="margin-top: 25%;">
-                    </div>
-                    <div class="col-6 text-start">
-                        <img class="img-fluid rounded w-100 wow zoomIn" data-wow-delay="0.3s" src="{{ asset('Home-assets/img/about-2.jpg')}}">
-                    </div>
-                    <div class="col-6 text-end">
-                        <img class="img-fluid rounded w-50 wow zoomIn" data-wow-delay="0.5s" src="{{ asset('Home-assets/img/about-3.jpg')}}">
-                    </div>
-                    <div class="col-6 text-start">
-                        <img class="img-fluid rounded w-75 wow zoomIn" data-wow-delay="0.7s" src="{{ asset('Home-assets/img/about-4.jpg')}}">
-                    </div>
+            <div class="col-md-6">
+              <div class="f-services">
+                 <div class="img w-100 mb-md-4" style="background-image: url({{asset('Home-assets2/images/f-services-2.jpg')}});"></div>
+                 <div class="text w-100 p-4 text-center">
+                    <div class="icon"><span class="flaticon-special"></span></div>
+                    <h3>Special Offers</h3>
+                    <p>Far far away, behind the word mountains, far from the countries Vokalia.</p>
                 </div>
             </div>
         </div>
     </div>
 </div>
-<!-- About End -->
+<div class="col-md-6 heading-section d-flex align-items-center" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+    <div class="mt-5 mt-md-0">
+       <span class="subheading">About Us</span>
+       <h2 class="mb-4">Unwind A Hotel Booking Agency</h2>
+       <p class="mb-5">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+       <p><a href="#" class="btn btn-primary py-3 px-4">Book Your Room Now</a></p>
+   </div>
+</div>
+</div>
+</div>
+</section>
 
-<!--Room Start-->
-<div class="container-xxl py-5">
-    <div class="container">
-        <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-            <h6 class="section-title text-center text-primary text-uppercase">Our Rooms</h6>
-            <h1 class="mb-5">Explore Our <span class="text-primary text-uppercase">Rooms</span></h1>
-        </div>
-        <div class="row g-4">
-            @foreach($rooms as $roomType)
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="room-item shadow rounded overflow-hidden">
-                        <div class="position-relative">
-                            <img class="img-fluid" src="{{ asset('assets/RoomImages') }}/{{ $roomType->profile }}" alt="{{ $roomType->name }}">
-                            <small class="position-absolute start-0 top-100 translate-middle-y bg-primary text-white rounded py-1 px-3 ms-4">
-                                ${{ $roomType->price }}/Night
-                            </small>
-                        </div>
-                        <div class="p-4 mt-2">
-                            <div class="d-flex justify-content-between mb-3">
-                                <h5 class="mb-0">{{ $roomType->room->first()->name }}</h5>
-                                <div class="ps-2">
-                                    <small class="fa fa-star text-primary"></small>
-                                    <small class="fa fa-star text-primary"></small>
-                                    <small class="fa fa-star text-primary"></small>
-                                    <small class="fa fa-star text-primary"></small>
-                                    <small class="fa fa-star text-primary"></small>
-                                </div>
-                            </div>
-                            <h6 class="text-body mb-3">Room Type: <span class="text-bold">{{ $roomType->name }}</span> </h6>
+<section class="ftco-section">
+   <div class="container-xl">
+      <div class="row justify-content-center">
+         <div class="col-md-8 heading-section text-center mb-5" data-aos="fade-up" data-aos-duration="1000">
+             <span class="subheading">Unwind Services</span>
+             <h2 class="mb-4">Explore Our Hotel Services</h2>
+         </div>
+     </div>
+     <div class="row justify-content-center">
+         <div class="col-md-3 col-xl-2 text-center d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
+            <a href="#" class="services">
+               <div class="icon"><span class="flaticon-wifi-signal"></span></div>
+               <div class="text">
+                  <h2>Free Wifi</h2>
+              </div>
+          </a>
+      </div>
+      <div class="col-md-3 col-xl-2 text-center d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+        <a href="#" class="services">
+           <div class="icon"><span class="flaticon-online-booking"></span></div>
+           <div class="text">
+              <h2>Easy Booking</h2>
+          </div>
+      </a>
+  </div>
+  <div class="col-md-3 col-xl-2 text-center d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
+    <a href="#" class="services">
+       <div class="icon"><span class="flaticon-cooking"></span></div>
+       <div class="text">
+          <h2>Restaurant</h2>
+      </div>
+  </a>
+</div>
+<div class="col-md-3 col-xl-2 text-center d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
+    <a href="#" class="services">
+       <div class="icon"><span class="flaticon-swimming-pool"></span></div>
+       <div class="text">
+          <h2>Swimming Pool</h2>
+      </div>
+  </a>
+</div>
+<div class="col-md-3 col-xl-2 text-center d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
+    <a href="#" class="services">
+       <div class="icon"><span class="flaticon-cosmetics"></span></div>
+       <div class="text">
+          <h2>Beauty &amp; Health</h2>
+      </div>
+  </a>
+</div>
+<div class="col-md-3 col-xl-2 text-center d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
+    <a href="#" class="services">
+       <div class="icon"><span class="flaticon-reception"></span></div>
+       <div class="text">
+          <h2>Help &amp; Support</h2>
+      </div>
+  </a>
+</div>
+</div>
+</div>
+</section>
 
-                            <div class="d-flex mb-3">
-                                <small class="border-end me-3 pe-3"><i class="fa fa-bed text-primary me-2"></i>3 Bed</small>
-                                <small class="border-end me-3 pe-3"><i class="fa fa-bath text-primary me-2"></i>2 Bath</small>
-                                <small><i class="fa fa-wifi text-primary me-2"></i>Wifi</small>
-                            </div>
-                            <p class="text-body mb-3">Comfortable and luxurious {{ $roomType->name }} for your stay.</p>
-                            <div class="d-flex justify-content-center">
-                                {{-- <a class="btn btn-sm btn-primary rounded py-2 px-4" href="#">View Detail</a> --}}
-                                <a class="btn btn-sm btn-dark rounded py-2 px-4 text-center"
-   href="{{ Auth::check() ? route('booking.form', ['room_id' => $roomType->id]) : route('login') }}">
-   Book Now
-</a>
-
-
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            @endforeach
+<section class="ftco-intro ftco-no-pt ftco-no-pb img" style="background-image: url({{asset('Home-assets2/images/bg_1.jpg')}});">
+   <div class="overlay"></div>
+   <div class="container-xl py-5">
+    <div class="row justify-content-center">
+       <div class="col-lg-10 col-xl-8">
+          <div class="row" data-aos="fade-up" data-aos-duration="1000">
+             <div class="col-md-8 d-flex align-items-center">
+                <div>
+                   <span class="subheading">Find Best Hotel For Leaving</span>
+                   <h1 class="mb-md-0 mb-4">Find the Best Hotel in Your Next Vacation</h1>
+               </div>
+           </div>
+           <div class="col-md-4 d-flex align-items-center">
+            <p class="mb-0"><a href="#" class="btn btn-primary py-md-4 py-3 px-md-5 px-4">Book Now</a></p>
         </div>
     </div>
 </div>
-        <!-- Room End -->
+</div>
+</div>
+</section>
 
-
-        <!-- Video Start -->
-        <div class="container-xxl py-5 px-0 wow zoomIn" data-wow-delay="0.1s">
-            <div class="row g-0">
-                <div class="col-md-6 bg-dark d-flex align-items-center">
-                    <div class="p-5">
-                        <h6 class="section-title text-start text-white text-uppercase mb-3">Luxury Living</h6>
-                        <h1 class="text-white mb-4">Discover A Brand Luxurious Hotel</h1>
-                        <p class="text-white mb-4">Step into a world of unparalleled luxury and sophistication where every detail is 
-                            crafted to offer you an extraordinary stay. Our hotel combines exquisite design,
-                             top-tier amenities, and exceptional service to create an environment of comfort and elegance.</p>
-                        <a href="{{url('our-rooms')}}" class="btn btn-primary py-md-3 px-md-5 me-3">Our Rooms</a>
-                        <a href="{{route('booking.form')}}" class="btn btn-light py-md-3 px-md-5">Book A Room</a>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="video">
-                        {{-- <button type="button" class="btn-play" data-bs-toggle="modal" data-src="https://www.youtube.com/embed/DWRcNpR6Kdc" data-bs-target="#videoModal">
-                            <span></span>
-                        </button> --}}
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        {{-- <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content rounded-0">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Youtube Video</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <!-- 16:9 aspect ratio -->
-                        <div class="ratio ratio-16x9">
-                            <iframe class="embed-responsive-item" src="#" id="video" allowfullscreen allowscriptaccess="always"
-                                allow="autoplay"></iframe>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div> --}}
-        <!-- Video Start -->
-
-
-        <!-- Service Start -->
-        <div class="container-xxl py-5">
-            <div class="container">
-                <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-                    <h6 class="section-title text-center text-primary text-uppercase">Our Services</h6>
-                    <h1 class="mb-5">Explore Our <span class="text-primary text-uppercase">Services</span></h1>
-                </div>
-                <div class="row g-4">
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                        <a class="service-item rounded" href="#">
-                            <div class="service-icon bg-transparent border rounded p-1">
-                                <div class="w-100 h-100 border rounded d-flex align-items-center justify-content-center">
-                                    <i class="fa fa-hotel fa-2x text-primary"></i>
-                                </div>
-                            </div>
-                            <h5 class="mb-3">Rooms & Appartment</h5>
-                            <p class="text-body mb-0">Experience comfort and elegance in 
-                                our spacious rooms and apartments designed to meet all your needs.
-                                 Each space is thoughtfully furnished to provide a relaxing atmosphere
-                                  and modern amenities for a memorable stay.</p>
-                        </a>
-                    </div>
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
-                        <a class="service-item rounded" href="#">
-                            <div class="service-icon bg-transparent border rounded p-1">
-                                <div class="w-100 h-100 border rounded d-flex align-items-center justify-content-center">
-                                    <i class="fa fa-utensils fa-2x text-primary"></i>
-                                </div>
-                            </div>
-                            <h5 class="mb-3">Food & Restaurant</h5>
-                            <p class="text-body mb-0">Savor a delightful culinary journey with our diverse menu, 
-                                crafted by expert chefs using fresh, local ingredients.
-                                 Our restaurant offers a perfect ambiance for casual dining or special occasions.</p>
-                        </a>
-                    </div>
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                        <a class="service-item rounded" href="#">
-                            <div class="service-icon bg-transparent border rounded p-1">
-                                <div class="w-100 h-100 border rounded d-flex align-items-center justify-content-center">
-                                    <i class="fa fa-spa fa-2x text-primary"></i>
-                                </div>
-                            </div>
-                            <h5 class="mb-3">Spa & Fitness</h5>
-                            <p class="text-body mb-0">Rejuvenate your body and mind with
-                                 our full range of spa treatments and wellness facilities. 
-                                From relaxing massages to state-of-the-art fitness equipment,
-                                 we help you stay refreshed and energized.</p>
-                        </a>
-                    </div>
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
-                        <a class="service-item rounded" href="#">
-                            <div class="service-icon bg-transparent border rounded p-1">
-                                <div class="w-100 h-100 border rounded d-flex align-items-center justify-content-center">
-                                    <i class="fa fa-swimmer fa-2x text-primary"></i>
-                                </div>
-                            </div>
-                            <h5 class="mb-3">Sports & Gaming</h5>
-                            <p class="text-body mb-0">Enjoy a variety of sports and gaming 
-                                options to keep you entertained throughout your stay. Whether you prefer swimming, t
-                                able tennis, or other recreational activities, there’s something for everyone.</p>
-                        </a>
-                    </div>
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                        <a class="service-item rounded" href="#">
-                            <div class="service-icon bg-transparent border rounded p-1">
-                                <div class="w-100 h-100 border rounded d-flex align-items-center justify-content-center">
-                                    <i class="fa fa-glass-cheers fa-2x text-primary"></i>
-                                </div>
-                            </div>
-                            <h5 class="mb-3">Event & Party</h5>
-                            <p class="text-body mb-0">Host unforgettable events and celebrations in our elegant
-                                 venues equipped with modern amenities and professional support. Perfect for weddings, 
-                                corporate gatherings, or private parties.</p>
-                        </a>
-                    </div>
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
-                        <a class="service-item rounded" href="#">
-                            <div class="service-icon bg-transparent border rounded p-1">
-                                <div class="w-100 h-100 border rounded d-flex align-items-center justify-content-center">
-                                    <i class="fa fa-dumbbell fa-2x text-primary"></i>
-                                </div>
-                            </div>
-                            <h5 class="mb-3">GYM & Yoga</h5>
-                            <p class="text-body mb-0">Maintain your fitness routine with access to our fully equipped 
-                                gym and guided yoga sessions. 
-                                Our facilities cater to all skill levels, helping you achieve balance and wellness during your visit.</p>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Service End -->
-
-
-        <!-- Testimonial Start -->
-<div class="container-xxl testimonial my-5 py-5 bg-dark wow zoomIn" data-wow-delay="0.1s">
-    <div class="container">
-        <div class="owl-carousel testimonial-carousel py-5">
-            <div class="testimonial-item position-relative bg-white rounded overflow-hidden">
-                <p>"Staying here was an absolute delight. The rooms were immaculate, and the staff went above and beyond to make our stay comfortable. Highly recommend!"</p>
-                <div class="d-flex align-items-center">
-                    <img class="img-fluid flex-shrink-0 rounded" src="{{ asset('Home-assets/img/testimonial-1.jpg')}}" style="width: 45px; height: 45px;">
-                    <div class="ps-3">
-                        <h6 class="fw-bold mb-1">Sofia L.</h6>
-                        <small>Travel Blogger</small>
-                    </div>
-                </div>
-                <i class="fa fa-quote-right fa-3x text-primary position-absolute end-0 bottom-0 me-4 mb-n1"></i>
-            </div>
-            <div class="testimonial-item position-relative bg-white rounded overflow-hidden">
-                <p>"The spa and fitness center are top-notch. After a long day of sightseeing, relaxing here was exactly what we needed. The experience was truly rejuvenating."</p>
-                <div class="d-flex align-items-center">
-                    <img class="img-fluid flex-shrink-0 rounded" src="{{ asset('Home-assets/img/testimonial-2.jpg')}}" style="width: 45px; height: 45px;">
-                    <div class="ps-3">
-                        <h6 class="fw-bold mb-1">Michael T.</h6>
-                        <small>Business Executive</small>
-                    </div>
-                </div>
-                <i class="fa fa-quote-right fa-3x text-primary position-absolute end-0 bottom-0 me-4 mb-n1"></i>
-            </div>
-            <div class="testimonial-item position-relative bg-white rounded overflow-hidden">
-                <p>"Fantastic food and wonderful atmosphere. The restaurant exceeded our expectations, offering a diverse menu with fresh, delicious options."</p>
-                <div class="d-flex align-items-center">
-                    <img class="img-fluid flex-shrink-0 rounded" src="{{ asset('Home-assets/img/testimonial-3.jpg')}}" style="width: 45px; height: 45px;">
-                    <div class="ps-3">
-                        <h6 class="fw-bold mb-1">James M.</h6>
-                        <small>Food Critic</small>
-                    </div>
-                </div>
-                <i class="fa fa-quote-right fa-3x text-primary position-absolute end-0 bottom-0 me-4 mb-n1"></i>
+<section class="ftco-section bg-light">
+   <div class="container-xl">
+      <div class="row justify-content-center">
+         <div class="col-md-8 heading-section text-center mb-5" data-aos="fade-up" data-aos-duration="1000">
+             <span class="subheading">Our Rooms</span>
+             <h2 class="mb-4">Featured Rooms</h2>
+         </div>
+     </div>
+     @foreach($rooms as $roomType)
+     <div class="row justify-content-center">
+         <div class="col-md-6 col-lg-4 d-flex align-items-stretch" data-aos="flip-left" data-aos-delay="100" data-aos-duration="1000">
+            <div class="room-wrap d-md-flex flex-md-column-reverse">
+             <a href="room-single.html" class="img img-room" style="background-image: url({{ asset('assets/RoomImages') }}/{{ $roomType->profile }});">
+             </a>
+             <div class="text p-5 text-center">
+                <h3><a href="room-single.html">{{ $roomType->room->first()->name }}</a></h3>
+                {{-- <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p> --}}
+                <p class="mb-0 mt-2"><span class="me-3 price"> ${{ $roomType->price }} <small>/ night</small></span><a href="{{ Auth::check() ? route('booking.form', ['room_id' => $roomType->id]) : route('login') }}" class="btn-custom">Book Now</a></p>
             </div>
         </div>
     </div>
 </div>
+ @endforeach
+</div>
+</section>
 
-        <!-- Testimonial End -->
-
-
-        <!-- Team Start -->
-        {{-- <div class="container-xxl py-5">
-            <div class="container">
-                <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-                    <h6 class="section-title text-center text-primary text-uppercase">Our Team</h6>
-                    <h1 class="mb-5">Explore Our <span class="text-primary text-uppercase">Staffs</span></h1>
-                </div>
-                <div class="row g-4">
-                    @foreach ($staffs as $index => $staff)
-                        <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="{{ 0.1 + ($index % 4) * 0.2 }}s">
-                            <div class="rounded shadow overflow-hidden">
-                                <div class="position-relative">
-                                    <img class="img-fluid" src="{{ asset('assets/StaffImages/' . $staff->photo) }}" alt="">
-                                    <div class="position-absolute start-50 top-100 translate-middle d-flex align-items-center">
-                                        <a class="btn btn-square btn-primary mx-1" href="#"><i class="fab fa-facebook-f"></i></a>
-                                        <a class="btn btn-square btn-primary mx-1" href="#"><i class="fab fa-twitter"></i></a>
-                                        <a class="btn btn-square btn-primary mx-1" href="#"><i class="fab fa-instagram"></i></a>
-                                    </div>
-                                </div>
-                                <div class="text-center p-4 mt-3">
-                                    <h5 class="fw-bold mb-0">{{ $staff->full_name }}</h5>
-                                    <small>{{ $staff->department->title }}</small> <!-- Fetching department name -->
-                                </div>
-                            </div>
-                        </div>
-                    @endforeach
-                </div>
-            </div>
-        </div> --}}
-        
-        <!-- Team End -->
-
-
-        <!-- Newsletter Start -->
-        <div class="container newsletter mt-5 wow fadeIn" data-wow-delay="0.1s">
-            <div class="row justify-content-center">
-                <div class="col-lg-10 border rounded p-1">
-                    <div class="border rounded text-center p-1">
-                        <div class="bg-white rounded text-center p-5">
-                            <h4 class="mb-4">Subscribe Our <span class="text-primary text-uppercase">Newsletter</span></h4>
-                            <div class="position-relative mx-auto" style="max-width: 400px;">
-                                <input class="form-control w-100 py-3 ps-4 pe-5" type="text" placeholder="Enter your email">
-                                <button type="button" class="btn btn-primary py-2 px-3 position-absolute top-0 end-0 mt-2 me-2">Submit</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+<section class="ftco-section">
+   <div class="container-fluid">
+      <div class="row justify-content-center pb-4">
+          <div class="col-md-7 text-center heading-section" data-aos="fade-up" data-aos-duration="1000">
+          	<span class="subheading">Resto &amp; Bar</span>
+            <h2 class="mb-3">Restaurant &amp; Bar</h2>
         </div>
-        <!-- Newsletter Start -->
-        
-
-        <!-- Footer Start -->
-        <div class="container-fluid bg-dark text-light footer wow fadeIn" data-wow-delay="0.1s">
-            <div class="container pb-5">
-                <div class="row g-5">
-                    <div class="col-md-6 col-lg-4">
-                        <div class="bg-primary rounded p-4">
-                            <a href="index.html"><h1 class="text-white text-uppercase mb-3">G - Hotel</h1></a>
-                            <p class="text-white mb-0">
-								Step into a world of unparalleled luxury and sophistication where every detail is 
-                            crafted to offer you an extraordinary stay.
-							</p>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-3">
-                        <h6 class="section-title text-start text-primary text-uppercase mb-4">Contact</h6>
-                        <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Kilimanjaro, Tanzania</p>
-                        <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>(+255) 651 286 663</p>
-                        <p class="mb-2"><i class="fa fa-envelope me-3"></i>mbaga0345@gmail.com</p>
-                        <div class="d-flex pt-2">
-                            <a class="btn btn-outline-light btn-social" href="#"><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-outline-light btn-social" href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-outline-light btn-social" href="#"><i class="fab fa-youtube"></i></a>
-                            <a class="btn btn-outline-light btn-social" href="#"><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                    <div class="col-lg-5 col-md-12">
-                        <div class="row gy-5 g-4">
-                            <div class="col-md-6">
-                                <h6 class="section-title text-start text-primary text-uppercase mb-4">Company</h6>
-                                <a  href="{{ url('about-us') }}" class="nav-item nav-link text-white">About</a>
-                                <a href="{{url('services')}}" class="nav-item nav-link text-white">Services</a>
-                                <a href="{{ url('pricing') }}" class="nav-item nav-link">Pricing</a>
-                                <a href="{{ url('our-rooms') }}" class="nav-item nav-link text-white">Rooms</a>
-                                <a href="{{ url('contact') }}" class="nav-item nav-link text-white">Contact</a>
-                            </div>
-                            <div class="col-md-6">
-                                <h6 class="section-title text-start text-primary text-uppercase mb-4">Services</h6>
-                                <a class="btn btn-link" href="#">Food & Restaurant</a>
-                                <a class="btn btn-link" href="#">Spa & Fitness</a>
-                                <a class="btn btn-link" href="#">Sports & Gaming</a>
-                                <a class="btn btn-link" href="#">Event & Party</a>
-                                <a class="btn btn-link" href="#">GYM & Yoga</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="copyright">
-                    <div class="row">
-                        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                            &copy; <a class="border-bottom" href="#">GeniusHotel</a>, All Right Reserved. 
-							
-							<!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-							Designed By <a class="border-bottom" href="#">Tech Genius</a>
-                            <br>Distributed By: <a class="border-bottom" href="#" target="_blank">Tech Genius</a>
-                        </div>
-                        <div class="col-md-6 text-center text-md-end">
-                            <div class="footer-menu">
-                                {{-- <a href="#">Home</a>
-                                <a href="#">Cookies</a>
-                                <a href="#">Help</a>
-                                <a href="#">FQAs</a> --}}
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Footer End -->
-
-
-        <!-- Back to Top -->
-        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
     </div>
+    <div class="row g-md-5">
+       <div class="col-md-12 col-xl-5 d-flex align-items-stretch">
+          <div class="img w-100 img-cuisine" style="background-image: url(images/resto-bar.jpg);" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
+             <div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-cooking"></span></div>
+         </div>
+     </div>
+     <div class="col-md-12 col-xl-7 ps-xl-5">
+      <div class="row g-md-2">
+         <div class="col-md-6">
+            <div class="pricing-entry d-flex align-items-center" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
+               <div class="img" style="background-image: url(images/menu-1.jpg);"></div>
+               <div class="desc ps-3">
+                  <div class="d-flex text">
+                     <h3><span>Grilled Beef with potatoes</span></h3>
+                     <span class="price">$20.00</span>
+                 </div>
+             </div>
+         </div>
+         <div class="pricing-entry d-flex align-items-center" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+           <div class="img" style="background-image: url(images/menu-2.jpg);"></div>
+           <div class="desc ps-3">
+              <div class="d-flex text">
+                 <h3><span>Grilled Beef with potatoes</span></h3>
+                 <span class="price">$29.00</span>
+             </div>
+         </div>
+     </div>
+     <div class="pricing-entry d-flex align-items-center" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
+       <div class="img" style="background-image: url(images/menu-3.jpg);"></div>
+       <div class="desc ps-3">
+          <div class="d-flex text">
+             <h3><span>Grilled Beef with potatoes</span></h3>
+             <span class="price">$20.00</span>
+         </div>
+     </div>
+ </div>
+ <div class="pricing-entry d-flex align-items-center" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
+   <div class="img" style="background-image: url(images/menu-4.jpg);"></div>
+   <div class="desc ps-3">
+      <div class="d-flex text">
+         <h3><span>Grilled Beef with potatoes</span></h3>
+         <span class="price">$20.00</span>
+     </div>
+ </div>
+</div>
+</div>
 
-    <!-- JavaScript Libraries -->
-    <script src="{{ asset('Home-assets/code.jquery.com/jquery-3.4.1.min.js')}}"></script>
-    <script src="{{ asset('Home-assets/cdn.jsdelivr.net/npm/bootstrap%405.0.0/dist/js/bootstrap.bundle.min.js')}}"></script>
-    <script src="{{ asset('Home-assets/lib/wow/wow.min.js') }}"></script>
-    <script src="{{ asset('Home-assets/lib/easing/easing.min.js') }}"></script>
-    <script src="{{ asset('Home-assets/lib/waypoints/waypoints.min.js') }}"></script>
-    <script src="{{ asset('Home-assets/lib/counterup/counterup.min.js') }}"></script>
-    <script src="{{ asset('Home-assets/lib/owlcarousel/owl.carousel.min.js') }}"></script>
-    <script src="{{ asset('Home-assets/lib/tempusdominus/js/moment.min.js') }}"></script>
-    <script src="{{ asset('Home-assets/lib/tempusdominus/js/moment-timezone.min.js') }}"></script>
-    <script src="{{ asset('Home-assets/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js') }}"></script>
+<div class="col-md-6">
+    <div class="pricing-entry d-flex align-items-center" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
+       <div class="img" style="background-image: url(images/menu-5.jpg);"></div>
+       <div class="desc ps-3">
+          <div class="d-flex text">
+             <h3><span>Grilled Beef with potatoes</span></h3>
+             <span class="price">$49.91</span>
+         </div>
+     </div>
+ </div>
+ <div class="pricing-entry d-flex align-items-center" data-aos="fade-up" data-aos-delay="600" data-aos-duration="1000">
+   <div class="img" style="background-image: url(images/menu-6.jpg);"></div>
+   <div class="desc ps-3">
+      <div class="d-flex text">
+         <h3><span>Ultimate Overload</span></h3>
+         <span class="price">$20.00</span>
+     </div>
+ </div>
+</div>
+<div class="pricing-entry d-flex align-items-center" data-aos="fade-up" data-aos-delay="700" data-aos-duration="1000">
+   <div class="img" style="background-image: url(images/menu-7.jpg);"></div>
+   <div class="desc ps-3">
+      <div class="d-flex text">
+         <h3><span>Grilled Beef with potatoes</span></h3>
+         <span class="price">$20.00</span>
+     </div>
+ </div>
+</div>
+<div class="pricing-entry d-flex align-items-center" data-aos="fade-up" data-aos-delay="800" data-aos-duration="1000">
+   <div class="img" style="background-image: url(images/menu-8.jpg);"></div>
+   <div class="desc ps-3">
+      <div class="d-flex text">
+         <h3><span>Ham &amp; Pineapple</span></h3>
+         <span class="price">$20.00</span>
+     </div>
+ </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
 
 
+<section class="ftco-section testimony-section bg-light">
+  <div class="container-xl">
+    <div class="row justify-content-center pb-4">
+      <div class="col-md-7 text-center heading-section" data-aos="fade-up" data-aos-duration="1000">
+         <span class="subheading">Testimonial</span>
+         <h2 class="mb-3">Happy Guests</h2>
+     </div>
+ </div>
+ <div class="row">
+  <div class="col-md-12" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+    <div class="carousel-testimony">
+      <div class="item">
+        <div class="testimony-wrap">
+          <div class="text">
+             <div class="d-flex align-items-center mb-4">
+               <div class="user-img" style="background-image: url(images/person_1.jpg)">
+                  <div class="icon d-flex align-items-center justify-content-center"><span class="fa fa-quote-left"></div>
+                  </div>
+                  <div class="ps-3 tx">
+                      <p class="name">Roger Scott</p>
+                      <span class="position">Marketing Manager</span>
+                  </div>
+              </div>
+              <p class="mb-4 msg">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+          </div>
+      </div>
+  </div>
+  <div class="item">
+    <div class="testimony-wrap">
+      <div class="text">
+         <div class="d-flex align-items-center mb-4">
+           <div class="user-img" style="background-image: url(images/person_2.jpg)">
+              <div class="icon d-flex align-items-center justify-content-center"><span class="fa fa-quote-left"></div>
+              </div>
+              <div class="ps-3 tx">
+                  <p class="name">Roger Scott</p>
+                  <span class="position">Marketing Manager</span>
+              </div>
+          </div>
+          <p class="mb-4 msg">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+      </div>
+  </div>
+</div>
+<div class="item">
+    <div class="testimony-wrap">
+      <div class="text">
+         <div class="d-flex align-items-center mb-4">
+           <div class="user-img" style="background-image: url(images/person_3.jpg)">
+              <div class="icon d-flex align-items-center justify-content-center"><span class="fa fa-quote-left"></div>
+              </div>
+              <div class="ps-3 tx">
+                  <p class="name">Roger Scott</p>
+                  <span class="position">Marketing Manager</span>
+              </div>
+          </div>
+          <p class="mb-4 msg">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+      </div>
+  </div>
+</div>
+<div class="item">
+    <div class="testimony-wrap">
+      <div class="text">
+         <div class="d-flex align-items-center mb-4">
+           <div class="user-img" style="background-image: url(images/person_1.jpg)">
+              <div class="icon d-flex align-items-center justify-content-center"><span class="fa fa-quote-left"></div>
+              </div>
+              <div class="ps-3 tx">
+                  <p class="name">Roger Scott</p>
+                  <span class="position">Marketing Manager</span>
+              </div>
+          </div>
+          <p class="mb-4 msg">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+      </div>
+  </div>
+</div>
+<div class="item">
+    <div class="testimony-wrap">
+      <div class="text">
+         <div class="d-flex align-items-center mb-4">
+           <div class="user-img" style="background-image: url(images/person_2.jpg)">
+              <div class="icon d-flex align-items-center justify-content-center"><span class="fa fa-quote-left"></div>
+              </div>
+              <div class="ps-3 tx">
+                  <p class="name">Roger Scott</p>
+                  <span class="position">Marketing Manager</span>
+              </div>
+          </div>
+          <p class="mb-4 msg">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+      </div>
+  </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
 
-    <!-- Template Javascript -->
-    <script src="{{ asset('Home-assets/js/main.js') }}"></script>
+<section class="ftco-section-counter">
+   <div class="container">
+      <div class="row section-counter">
+       <div class="col-6 col-sm-6 col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+          <div class="counter-wrap">
+             <span class="number"><span class="countup">38900</span></span>
+             <span class="caption"># of Happy Guests</span>
+         </div>
+     </div>
+     <div class="col-6 col-sm-6 col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+      <div class="counter-wrap">
+         <span class="number"><span class="countup">320</span></span>
+         <span class="caption"># of Rooms</span>
+     </div>
+ </div>
+ <div class="col-6 col-sm-6 col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
+  <div class="counter-wrap">
+     <span class="number"><span class="countup">1000</span></span>
+     <span class="caption"># of Staffs</span>
+ </div>
+</div>
+<div class="col-6 col-sm-6 col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
+  <div class="counter-wrap">
+     <span class="number"><span class="countup">587</span></span>
+     <span class="caption"># of Destination</span>
+ </div>
+</div>
+</div>
+<div class="row">
+ 
+</div>
+</div>
+</section>
+
+<section class="ftco-section bg-light">
+  <div class="container-xl">
+    <div class="row justify-content-center mb-5">
+      <div class="col-md-7 heading-section text-center" data-aos="fade-up" data-aos-duration="1000">
+         <span class="subheading">Our Blog</span>
+         <h2>Recent Blog</h2>
+     </div>
+ </div>
+ <div class="row">
+  <div class="col-md-6 col-lg-3 d-flex">
+     <div class="blog-entry justify-content-end" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+        <a href="blog-single.html" class="block-20 img d-flex align-items-end" style="background-image: url('images/image_1.jpg');">
+        </a>
+        <div class="text">
+         <p class="meta"><span>Admin</span> <span>Dec. 23, 2020</span><a href="#">3 Comments</a></p>
+         <h3 class="heading mb-3"><a href="#">Best Hotel Near Beach in Hawaii</a></h3>
+         <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+     </div>
+ </div>
+</div>
+<div class="col-md-6 col-lg-3 d-flex">
+ <div class="blog-entry justify-content-end" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+    <a href="blog-single.html" class="block-20 img d-flex align-items-end" style="background-image: url('images/image_2.jpg');">
+    </a>
+    <div class="text">
+     <p class="meta"><span>Admin</span> <span>Dec. 23, 2020</span><a href="#">3 Comments</a></p>
+     <h3 class="heading mb-3"><a href="#">Best Hotel Near Beach in Hawaii</a></h3>
+     <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+ </div>
+</div>
+</div>
+<div class="col-md-6 col-lg-3 d-flex">
+ <div class="blog-entry justify-content-end" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+    <a href="blog-single.html" class="block-20 img d-flex align-items-end" style="background-image: url('images/image_3.jpg');">
+    </a>
+    <div class="text">
+     <p class="meta"><span>Admin</span> <span>Dec. 23, 2020</span><a href="#">3 Comments</a></p>
+     <h3 class="heading mb-3"><a href="#">Best Hotel Near Beach in Hawaii</a mb-3></h3>
+        <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>              
+    </div>
+</div>
+</div>
+<div class="col-md-6 col-lg-3 d-flex">
+ <div class="blog-entry justify-content-end" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+    <a href="blog-single.html" class="block-20 img d-flex align-items-end" style="background-image: url('images/image_4.jpg');">
+    </a>
+    <div class="text">
+     <p class="meta"><span>Admin</span> <span>Dec. 23, 2020</span><a href="#">3 Comments</a></p>
+     <h3 class="heading mb-3"><a href="#">Best Hotel Near Beach in Hawaii</a mb-3></h3>
+        <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>              
+    </div>
+</div>
+</div>
+</div>
+</div>
+</section>	
+
+<section class="ftco-gallery">
+   <div class="container-fluid">
+      <div class="row g-3">
+         <div class="col-md" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
+            <a href="images/gallery-1.jpg" class="gallery-wrap img d-flex align-items-center justify-content-center glightbox" style="background-image: url(images/gallery-1.jpg);">
+               <div class="icon d-flex align-items-center justify-content-center"><span class="fa fa-search"></span></div>
+           </a>
+       </div>
+       <div class="col-md" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+        <a href="images/gallery-1.jpg" class="gallery-wrap img d-flex align-items-center justify-content-center glightbox" style="background-image: url(images/gallery-2.jpg);">
+           <div class="icon d-flex align-items-center justify-content-center"><span class="fa fa-search"></span></div>
+       </a>
+   </div>
+   <div class="col-md" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
+    <a href="images/gallery-3.jpg" class="gallery-wrap img d-flex align-items-center justify-content-center glightbox" style="background-image: url(images/gallery-3.jpg);">
+       <div class="icon d-flex align-items-center justify-content-center"><span class="fa fa-search"></span></div>
+   </a>
+</div>
+<div class="col-md" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
+    <a href="images/gallery-4.jpg" class="gallery-wrap img d-flex align-items-center justify-content-center glightbox" style="background-image: url(images/gallery-4.jpg);">
+       <div class="icon d-flex align-items-center justify-content-center"><span class="fa fa-search"></span></div>
+   </a>
+</div>
+<div class="col-md" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
+    <a href="images/gallery-5.jpg" class="gallery-wrap img d-flex align-items-center justify-content-center glightbox" style="background-image: url(images/gallery-5.jpg);">
+       <div class="icon d-flex align-items-center justify-content-center"><span class="fa fa-search"></span></div>
+   </a>
+</div>
+</div>
+</div>
+</section>
+
+<footer class="ftco-footer">
+  <div class="container-xl">
+    <div class="row mb-5 pb-5 justify-content-between">
+      <div class="col-md-6 col-lg">
+        <div class="ftco-footer-widget mb-4">
+          <h2 class="ftco-heading-2 logo d-flex">
+             <a class="navbar-brand align-items-center" href="index.html">
+                 <span class="">Unwind <small>Hotel Booking</small></span>
+             </a>
+         </h2>
+         <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+         <ul class="ftco-footer-social list-unstyled mt-2">
+            <li><a href="#"><span class="fa fa-twitter"></span></a></li>
+            <li><a href="#"><span class="fa fa-facebook"></span></a></li>
+            <li><a href="#"><span class="fa fa-instagram"></span></a></li>
+        </ul>
+    </div>
+</div>
+<div class="col-md-6 col-lg-4">
+ <div class="ftco-footer-widget mb-4">
+  <h2 class="ftco-heading-2">Services</h2>
+</div>
+<div class="row">
+   <div class="col-lg-6">
+      <div class="ftco-footer-widget mb-4">
+        <ul class="list-unstyled">
+          <li><a href="#"><span class="fa fa-chevron-right me-2"></span>Free Wifi</a></li>
+          <li><a href="#"><span class="fa fa-chevron-right me-2"></span>Easy Booking</a></li>
+          <li><a href="#"><span class="fa fa-chevron-right me-2"></span>Restaurant</a></li>
+          <li><a href="#"><span class="fa fa-chevron-right me-2"></span>Swimming Pool</a></li>
+      </ul>
+  </div>
+</div>
+<div class="col-lg-6">
+  <div class="ftco-footer-widget mb-4">
+    <ul class="list-unstyled">
+      <li><a href="#"><span class="fa fa-chevron-right me-2"></span>Beauty &amp; Health</a></li>
+      <li><a href="#"><span class="fa fa-chevron-right me-2"></span>60" Flatscreen TV</a></li>
+      <li><a href="#"><span class="fa fa-chevron-right me-2"></span>Cold Aircondition</a></li>
+      <li><a href="#"><span class="fa fa-chevron-right me-2"></span>Help &amp; Support</a></li>
+  </ul>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-6 col-lg-2">
+   <div class="ftco-footer-widget mb-4">
+      <h2 class="ftco-heading-2">Quick Links</h2>
+      <ul class="list-unstyled">
+        <li><a href="#"><span class="fa fa-chevron-right me-2"></span>Home</a></li>
+        <li><a href="#"><span class="fa fa-chevron-right me-2"></span>About</a></li>
+        <li><a href="#"><span class="fa fa-chevron-right me-2"></span>Rooms</a></li>
+        <li><a href="#"><span class="fa fa-chevron-right me-2"></span>Resto &amp; Bar</a></li>
+    </ul>
+</div>
+</div>
+<div class="col-md-6 col-lg">
+    <div class="ftco-footer-widget mb-4">
+       <h2 class="ftco-heading-2">Have a Questions?</h2>
+       <div class="block-23 mb-3">
+         <ul>
+           <li><span class="icon fa fa-map marker"></span><span class="text">203 Fake St. Mountain View, San Francisco, California, USA</span></li>
+           <li><a href="#"><span class="icon fa fa-phone"></span><span class="text">+2 392 3929 210</span></a></li>
+           <li><a href="#"><span class="icon fa fa-paper-plane pr-4"></span><span class="text"><span class="__cf_email__" data-cfemail="2f464149406f56405a5d4b40424e4641014c4042">[email&#160;protected]</span></span></a></li>
+       </ul>
+   </div>
+</div>
+</div>
+</div>
+</div>
+<div class="container-fluid px-0 py-5 bg-darken">
+ <div class="container-xl">
+    <div class="row">
+     <div class="col-md-12 text-center">
+       <p class="mb-0" style="color: rgba(255,255,255,.5); font-size: 13px;">Copyright &copy;<script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart color-danger" aria-hidden="true"></i> by <a href="https://colorlib.com/" target="_blank" rel="nofollow noopener">Colorlib</a></p>
+   </div>
+</div>
+</div>
+</div>
+</footer>
+
+
+<script src="{{asset('Home-assets2/js/bootstrap.bundle.min.js')}}"></script>
+<script src="{{asset('Home-assets2/js/tiny-slider.js')}}"></script>
+<script src="{{asset('Home-assets2/js/glightbox.min.js')}}"></script>
+<script src="{{asset('Home-assets2/js/aos.js')}}"></script>
+<script src="{{asset('Home-assets2/js/datepicker.min.js')}}"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&amp;sensor=false"></script>
+<script src="{{asset('Home-assets2/js/google-map.js')}}"></script>
+<script src="{{asset('Home-assets2/js/main.js')}}"></script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-23581568-13');
+</script>
+
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"rayId":"96f13560ff11b2ea","version":"2025.8.0","serverTiming":{"name":{"cfExtPri":true,"cfEdge":true,"cfOrigin":true,"cfL4":true,"cfSpeedBrain":true,"cfCacheStatus":true}},"token":"cd0b4b3a733644fc843ef0b185f98241","b":1}' crossorigin="anonymous"></script>
 </body>
 
-
-<!-- Mirrored from themewagon.github.io/hotelier/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 05 Mar 2025 08:05:02 GMT -->
+<!-- Mirrored from preview.colorlib.com/theme/unwind/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 14 Aug 2025 14:41:22 GMT -->
 </html>

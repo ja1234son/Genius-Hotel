@@ -145,7 +145,8 @@
                                                 <div class="mt-4">
                                                     <button  class="btn btn-warning w-100" type="submit">Sign
                                                         In</button>
-                                                </div>
+                                                </div><br>
+                                                <p style="text-align:center">Back to <a href="{{url('/')}}">home</a></p>
                                             </form>
                                         </div>
                                     </div>
