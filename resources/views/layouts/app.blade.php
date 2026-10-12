@@ -60,7 +60,7 @@
         <!--*******************
         Preloader start
     ********************-->
-    <div id="preloader">
+    {{-- <div id="preloader">
         <div class="loader">
 			<span>H</span>
 			<span>O</span>
@@ -68,7 +68,7 @@
 			<span>E</span>
 			<span>L</span>
 		</div>
-    </div>
+    </div> --}}
     <!--*******************
         Preloader end
     ********************-->
